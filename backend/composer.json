@@ -1,0 +1,13 @@
+{
+    "name": "galpones-plegables/backend",
+    "description": "API Backend - Galpones Plegables",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}
