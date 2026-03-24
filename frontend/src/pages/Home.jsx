@@ -1,26 +1,12 @@
-function Home() {
+import Hero from "../layouts/Hero.jsx"
+
+
+const Home = () => {
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>JAJAJAJA</h1>
-    </div>
+    <>
+      <Hero/>
+
+    </>
   )
 }
 

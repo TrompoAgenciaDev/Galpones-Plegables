@@ -1,0 +1,222 @@
+:root{
+    --primary-font: "Neue Haas Grotesk Display Pro";
+    --text-font: "Assistant";
+    --secondary-font: "Poppins";
+
+    --secondary-color: #001B73;
+    --primary-color: #00249A;
+    --text-primary-color: #ffffff;
+    --text-secondary-color: #00249A;
+
+
+    --container-desktop-width: 1140px;    
+    --container-tablet-landscape-width: 955px;
+    --container-tablet-width: 728pxpx;
+    --container-mobile-width: 320px;
+    
+}
+
+/* Normalize basico */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--text-font), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--primary-font), sans-serif;
+    line-height: 1.1;
+}
+
+p, span{
+    font-family: var(--text-font), sans-serif;
+}
+
+/* Mobile */
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 34px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+
+
+/* Efecto imágen Halftone*/
+.img-halftone{
+    --halftone-max-radius: 8px;
+    --halftone-step: 18px;
+    --halftone-intensity: 0.72;
+    --halftone-angle-1: 108deg;
+    --halftone-angle-2: 162deg;
+    --halftone-angle-3: 90deg;
+    --halftone-angle-4: 45deg;
+
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.img-halftone::before,
+.img-halftone::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: var(--halftone-intensity);
+    transform-origin: center;
+}
+
+.img-halftone::before{
+    background:
+        radial-gradient(circle, var(--primary-color) 0 var(--halftone-max-radius), transparent calc(var(--halftone-max-radius) + 0.5px)),
+        radial-gradient(circle, var(--primary-color) 0 calc(var(--halftone-max-radius) * 0.7), transparent calc((var(--halftone-max-radius) * 0.7) + 0.5px));
+    background-size: var(--halftone-step) var(--halftone-step), calc(var(--halftone-step) * 0.75) calc(var(--halftone-step) * 0.75);
+    background-position: 0 0, 6px 6px;
+    transform: rotate(var(--halftone-angle-1));
+}
+
+.img-halftone::after{
+    background:
+        radial-gradient(circle, var(--primary-color) 0 calc(var(--halftone-max-radius) * 0.55), transparent calc((var(--halftone-max-radius) * 0.55) + 0.5px)),
+        radial-gradient(circle, var(--primary-color) 0 calc(var(--halftone-max-radius) * 0.4), transparent calc((var(--halftone-max-radius) * 0.4) + 0.5px));
+    background-size: calc(var(--halftone-step) * 0.7) calc(var(--halftone-step) * 0.7), calc(var(--halftone-step) * 0.45) calc(var(--halftone-step) * 0.45);
+    background-position: 3px 3px, 10px 10px;
+    transform: rotate(var(--halftone-angle-4));
+    mix-blend-mode: multiply;
+}
+
+
+.full-container{
+    width: 100%;
+    min-width: 100%;
+    height: 100svh;
+}
+
+.full-container{
+    width: 100%;
+    max-width: var(--container-mobile-width);
+    height: 100%;
+}
+
+.white-color{
+    color: #ffffff;
+}
+
+.blue-color{
+    color: var(--primary-color);
+}
+
+.bg-blue{
+    background-color: var(--primary-color);
+}
+
+.bg-dark-blue{
+    background-color: var(--secondary-color);
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    h1{
+        font-size: 72px;
+    }
+
+    h2{
+        font-size: 56px;
+    }
+
+    h3{
+        font-size: 42px;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 24px;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px){
+    h1{
+        font-size: 130px;
+    }
+
+    h2{
+        font-size: 100px;
+    }
+
+    h3{
+        font-size: 70px;
+    }
+
+    h4{
+        font-size: 40px;
+    }
+
+    h5{
+        font-size: 30px;
+    }
+
+    h6{
+        font-size: 22px;
+    }
+
+    .full-container{
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: var(--container-desktop-width);
+    }
+}

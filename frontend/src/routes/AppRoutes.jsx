@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import routesConfig from '@/config/routesConfig';
-import Layout from '@/components/Layout';
+import Layout from '@/layouts/Layout';
 
 const AppRoutes = () => {
   return (
