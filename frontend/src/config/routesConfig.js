@@ -1,19 +1,28 @@
 import { lazy } from "react";
 
 import Home from '../pages/Home.jsx';
-const Productos = lazy(()=>import('../pages/Productos.jsx'));
-const SobreNosotros = lazy(()=>import('../pages/SobreNosotros.jsx'));
-const CasosExito = lazy(()=>import('../pages/CasosExito.jsx'));
-const Presupuestar = lazy(()=>import('../pages/Presupuestar.jsx'));
+const Solucion = lazy(() => import('../pages/Solucion.jsx'));
+const Nosotros = lazy(() => import('../pages/Nosotros.jsx'));
+const Contacto = lazy(() => import('../pages/Contacto.jsx'));
+const Montaje = lazy(() => import('../pages/Montaje.jsx'));
+const Modelos = lazy(() => import('../pages/Modelos.jsx'));
+const Proyectos = lazy(() => import('../pages/Proyectos.jsx'));
 
 
 const routesConfig = {
-    mainMenu: [
-        {path: "/", label: "Inicio", component: Home},
-        {path: "/productos", label: "Productos", component: Productos},
-        {path: "/sobre-nosotros", label: "Sobre Nosotros", component: SobreNosotros},
-        {path: "/casos-exito", label: "Casos de Éxito", component: CasosExito},
-        {path: "/presupuestar", label: "Presupuestar", component: Presupuestar},
+    menuHome: [
+        { path: "/", label: "Inicio", component: Home },
+    ],
+    menuLeft: [
+        { path: "/nosotros", label: "Nosotros", component: Nosotros },
+        { path: "/solucion", label: "Solucion", component: Solucion },
+        { path: "/modelos", label: "Modelos", component: Modelos },
+    ],
+
+    menuRight: [
+        { path: "/montaje", label: "Montaje", component: Montaje },
+        { path: "/proyectos", label: "Proyectos", component: Proyectos },
+        { path: "/contacto", label: "Contacto", component: Contacto },
     ],
 }
 
