@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Galpón Plegable 7.3",
+    "short_description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento",
+    "description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento. Su diseño plegable y metálico permite el transporte compacto, el despliegue en obra sin requerimientos de fundación permanente y la reubicación posterior, lo que lo convierte en una solución versátil y funcional ante necesidades de espacio inmediato.",
+    "default_image": "assets/img/products/plegable-7-3/plegable 7-3-azul.png",
+    "hover_image": "assets/img/products/plegable-7-3/plegable-7-3.png",
+    "images": [
+      "assets/img/products/plegable-7-3/GP_Axo_Chico-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-en-proceso-drone-2-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-en-proceso-drone-3-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-en-proceso-drone-5-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-en-proceso-drone-6-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-en-proceso-drone-7-scaled.webp",
+      "assets/img/products/plegable-7-3/montaje-7.3-valle-instalado-scaled.webp"
+    ],
+    "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/10/Ficha-tecnica-Galpon-Plegable-7.3.pdf",
+    "medidas": "7x3x2,3",
+    "tiempo": "1 a 3 días",
+    "attributes": {
+      "frente": "7 metros",
+      "altura": "3 metros",
+      "profundidad": "2,3 metros",
+      "superficie": "15 m²",
+      "estructura": "Acero galvanizado",
+      "cubierta": "Chapa trapezoidal galvanizada o paneles",
+      "cerramientos": "Chapa trapezoidal galvanizada o paneles"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Galpón Plegable 11.4",
+    "short_description": "Estructura metálica modular de gran porte, ideal para almacenamiento industrial o logístico de alto volumen. Altura útil de 4 metros y frente de 11 metros.",
+    "description": "El Galpón Plegable 11.4 está concebido como una solución estructural adaptable para operaciones industriales que requieren superficies cubiertas de gran volumen. Su diseño se basa en un sistema modular metálico compuesto por pórticos articulados, lo que permite el transporte en formato plegado, el montaje sin intervención en el terreno y la reutilización en distintos emplazamientos.",
+    "default_image": "assets/img/products/plegable-11-4/plegable 11-4 azlu.png",
+    "hover_image": "assets/img/products/plegable-11-4/plegable 11-4.png",
+    "images": [
+      "assets/img/products/plegable-11-4/GP_Axo_Grande-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0657-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0655-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0648-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0676-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0672-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0683-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0688-scaled.webp",
+      "assets/img/products/plegable-11-4/DJI_0711-scaled.webp",
+      "assets/img/products/plegable-11-4/montaje-11.4-valle-en-proceso-drone-scaled.webp"
+    ],
+    "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/04/GP-Ficha-tecnica-11.4.pdf",
+    "medidas": "11x4x2,3",
+    "tiempo": "2 a 4 días",
+    "attributes": {
+      "frente": "11 metros",
+      "altura": "4 metros",
+      "profundidad": "2,3 metros",
+      "superficie": "25 m²",
+      "estructura": "Acero galvanizado",
+      "cubierta": "Chapa trapezoidal galvanizada o paneles",
+      "cerramientos": "Chapa trapezoidal galvanizada o paneles"
+    }
+  }
+]

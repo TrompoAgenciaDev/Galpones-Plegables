@@ -31,15 +31,6 @@
     z-index: 100;
 }
 
-.grid-item-about:last-child p{
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    text-transform: uppercase;
-}
-
 .about-container::after{
     content:"";
     position: absolute;
@@ -50,6 +41,12 @@
     background-color: var(--secondary-color);
     clip-path: polygon(0 75%, 100% 60%, 100% 100%, 0 100%);
     z-index: 1;
+}
+
+.grid-item-about h2,
+.grid-item-about h5,
+.grid-item-about p{
+    color: var(--text-primary-color);
 }
 
 @media (min-width: 1024px) {

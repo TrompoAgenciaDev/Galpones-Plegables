@@ -3,6 +3,7 @@ import "../styles/hero.css";
 
 
 const Hero = () => {
+    const base = import.meta.env.BASE_URL;
 
     return (
         <>
@@ -17,8 +18,8 @@ const Hero = () => {
                     playsInline
                     className="hero-video"
                 >
-                    <source src="/assets/hero/hero.webm" type="video/webm" />
-                    <source src="/assets/hero/hero.mp4" type="video/mp4" />
+                    <source src={`${base}assets/hero/hero.webm`} type="video/webm" />
+                    <source src={`${base}assets/hero/hero.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                 </motion.video>
                 <div className="container">

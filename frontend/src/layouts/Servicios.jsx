@@ -1,62 +1,122 @@
+import { useCallback, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import "../styles/servicios.css";
 
+const accordionItems = [
+    "Fabricación de Galpones Plegables",
+    "Alquiler de infraestructura temporal",
+    "Instalación rápida en planta",
+    "Soluciones para almacenamiento y logística",
+    "Estructuras reubicables",
+    "Adaptación a diferentes industrias",
+];
+
+const accordionText =
+    "DISEÑAMOS Y FABRICAMOS ESTRUCTURAS METÁLICAS MODULARES QUE SE PLIEGAN PARA FACILITAR TRANSPORTE, LOGÍSTICA E INSTALACIÓN EN PLANTA.";
+
+const textMotion = {
+    hidden: { opacity: 0, height: 0, pointerEvents: "none" },
+    visible: {
+        opacity: 1,
+        height: "auto",
+        pointerEvents: "auto",
+        transition: { duration: 0.22, ease: "easeOut" },
+    },
+};
+
 const Servicios = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const handleToggle = useCallback((index) => {
+        setActiveIndex((prev) => (prev === index ? null : index));
+    }, []);
+
     return (
-        <section className="full-container white-color services-section">
+        <section className="full-container bg-white services-section">
             <div className="container grid-services">
                 <div className="service-item">
                     <h3>Soluciones Industriales</h3>
-                    <img src="" alt="" />
+                    <img src={`${import.meta.env.BASE_URL}assets/img/servicios.png`} alt="Servicios Img" />
                 </div>
-                <div className="service-item">
+                <div className="service-item border-top-orange">
                     <h3>Servicios</h3>
                     <div className="full-container service-accordion">
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Fabricación de Galpones Plegables</h5>
-                                <span>—</span>
-                            </div>
-                            <div className="accordion-content">
-                                <p>DISEÑAMOS Y FABRICAMOS ESTRUCTURAS METÁLICAS MODULARES QUE SE PLIEGAN PARA FACILITAR TRANSPORTE, LOGÍSTICA E INSTALACIÓN EN PLANTA.</p>
-                                <a href="#">[ VER MAS → ]</a>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Alquiler de infraestructura temporal</h5>
-                                <span>+</span>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Instalación rápida en planta</h5>
-                                <span>+</span>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Soluciones para almacenamiento y logística</h5>
-                                <span>+</span>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Estructuras reubicables</h5>
-                                <span>+</span>
-                            </div>
-                        </div>
-                        <div className="accordion-item">
-                            <div className="accordion-header">
-                                <h5>Adaptación a diferentes industrias</h5>
-                                <span>+</span>
-                            </div>
-                        </div>
-                        <button className="btn-all-services">VER MÁS SERVICIOS</button>
+                        {accordionItems.map((title, index) => {
+                            const isOpen = activeIndex === index;
+
+                            return (
+                                <div key={title} className="accordion-item border-top-orange">
+                                    <button
+                                        type="button"
+                                        className="accordion-header"
+                                        onClick={() => handleToggle(index)}
+                                        aria-expanded={isOpen}
+                                        aria-controls={`accordion-content-${index}`}
+                                    >
+                                        <h6>{title}</h6>
+                                        <span className="accordion-icon-btn" aria-hidden="true">
+                                            <AnimatePresence initial={false}>
+                                                {!isOpen && (
+                                                    <motion.span
+                                                        key="plus-icon"
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        exit={{ opacity: 0 }}
+                                                        transition={{ duration: 0.15, ease: "easeOut" }}
+                                                    >
+                                                        <svg
+                                                            height="21"
+                                                            viewBox="0 0 21 21"
+                                                            width="21"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <g
+                                                                fill="none"
+                                                                fillRule="evenodd"
+                                                                stroke="currentColor"
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                            >
+                                                                <path d="m5.5 10.5h10" />
+                                                                <path d="m10.5 5.5v10" />
+                                                            </g>
+                                                        </svg>
+                                                    </motion.span>
+                                                )}
+                                            </AnimatePresence>
+                                        </span>
+                                    </button>
+                                    <div className="accordion-content">
+                                        <motion.div
+                                            key={`accordion-content-${index}`}
+                                            id={`accordion-content-${index}`}
+                                            className="accordion-body"
+                                            variants={textMotion}
+                                            initial={false}
+                                            animate={isOpen ? "visible" : "hidden"}
+                                            aria-hidden={!isOpen}
+                                            layout
+                                        >
+                                            <p className="upper-text text-accordion">{accordionText}</p>
+                                            <a href="#" className="accordion-link" tabIndex={isOpen ? 0 : -1}>
+                                                [ VER MAS → ]
+                                            </a>
+                                        </motion.div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                        <a href="#" className="btn btn-desktop">
+                            ver más servicios
+                        </a>
                     </div>
                 </div>
             </div>
+            <a href="#" className="btn btn-mobile">
+                ver más servicios
+            </a>
         </section>
-    )
-}
+    );
+};
 
 export default Servicios;

@@ -1,4 +1,3 @@
-
 import "../styles/about.css";
 
 const About = () => {
@@ -19,14 +18,14 @@ const About = () => {
                             Una solución robusta, reubicable y adaptable para operaciones industriales, logísticas y productivas.
                         </strong>
                     </p>
-                    <img src="/assets/img/comar-logo.png" alt="Comar Construcciones" />
+                    <img src={`${import.meta.env.BASE_URL}assets/img/comar-logo.png`} alt="Comar Construcciones" />
                 </div>
                 <div className="grid-item-about">
 
-                    <p>
+                    <p className="upper-text">
                         Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
                     </p>
-                    <p>
+                    <p className="upper-text">
                         Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
                     </p>
                 </div>
