@@ -56,7 +56,11 @@ const ProductLoop = () => {
                 <motion.div
                     className="carousel-track"
                     animate={{ x: `-${currentIndex * (100 / itemsToShow)}%` }}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                    transition={{ 
+                        type: "tween", 
+                        ease: "easeInOutQuart",
+                        duration: 0.8
+                    }}
                 >
                     {productsData.map((product) => (
                         <div
@@ -81,8 +85,8 @@ const ProductLoop = () => {
             </div>
 
             <div className="container">
-                <button className="btn btn-mobile">ver más proyectos</button>
-                <button className="btn btn-desktop">ver más proyectos</button>
+                <button className="btn btn-blue btn-mobile">ver más proyectos</button>
+                <button className="btn btn-blue btn-desktop">ver más proyectos</button>
             </div>
         </div>
     );

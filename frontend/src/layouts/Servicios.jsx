@@ -106,13 +106,13 @@ const Servicios = () => {
                                 </div>
                             );
                         })}
-                        <a href="#" className="btn btn-desktop">
+                        <a href="#" className="btn btn-blue btn-desktop">
                             ver más servicios
                         </a>
                     </div>
                 </div>
             </div>
-            <a href="#" className="btn btn-mobile">
+            <a href="#" className="btn btn-blue btn-mobile">
                 ver más servicios
             </a>
         </section>

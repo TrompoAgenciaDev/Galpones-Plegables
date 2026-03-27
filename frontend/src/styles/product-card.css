@@ -110,7 +110,6 @@
 
 .carousel-track {
     display: flex;
-    transition: transform 0.3s ease;
 }
 
 .carousel-item {

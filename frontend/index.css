@@ -96,6 +96,7 @@ h3 {
 
 h4 {
     font-size: 24px;
+    font-weight: 400;
 }
 
 h5 {
@@ -230,8 +231,6 @@ h6 {
 
 .btn {
     width: 100%;
-    background-color: var(--primary-color);
-    color: var(--text-primary-color);
     height: 40px;
     font-size: 18px;
     text-decoration: none;
@@ -255,39 +254,19 @@ h6 {
     color: var(--text-primary-color);
 }
 
-.footer-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.footer-form input {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid var(--text-primary-color);
+.btn-blue {
+    background-color: var(--primary-color);
     color: var(--text-primary-color);
-    padding: 10px 0;
-    width: 100%;
-    outline: none;
 }
 
-.footer-form.orange input {
-    border-bottom-color: var(--terciary-color);
-    color: var(--primary-color);
-}
 
-.footer-form input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-form.orange input::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.btn-desktop {
+.btn-desktop,
+.desktop {
     display: none;
 }
+
+
 
 /* Header */
 .header-content {
@@ -472,11 +451,13 @@ header {
         font-weight: 700;
     }
 
-    .btn-mobile {
+    .btn-mobile,
+    .mobile {
         display: none;
     }
 
-    .btn-desktop {
+    .btn-desktop,
+    .desktop {
         display: flex;
     }
 }
