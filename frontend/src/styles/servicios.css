@@ -1,5 +1,6 @@
 .services-section {
     height: auto;
+    min-height: 100vh;
     min-height: 100svh;
     position: relative;
     overflow: hidden;
@@ -113,6 +114,7 @@
         position: absolute;
         bottom: 0;
         left: 50%;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 1px;
         height: 150%;

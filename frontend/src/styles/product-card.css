@@ -16,6 +16,7 @@
 
 .product-card {
     border-radius: 12px;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -49,10 +50,12 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .product-card:hover .product-image {
+    -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
 
@@ -136,6 +139,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 

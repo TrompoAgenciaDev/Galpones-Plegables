@@ -49,7 +49,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="full-container footer-bottom">
+            <div className="full-container footer-bottom bg-dark-blue">
                 <div className="full-container">
                     <div className="container">
                         <div className="footer-logo">
@@ -88,17 +88,19 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="full-container copy-container">
-                <div className="container">
+            <div className="full-container copy-container bg-dark-blue">
+                <div className="full-container">
                     <p className='upper-text text-white'>
                         © 2026 - diseñado x <a href="http://trompoagencia.com" target="_blank" rel="noopener noreferrer"><strong>trompo agencia</strong></a> Todos los derechos reservados
                     </p>
+                </div>
+                <div className="full-container">
                     <form className="footer-form copy-form">
                         <h4 className='text-white'>Solicitar información</h4>
                         <input type="email" id="info-email" name="email" placeholder="E-mail" required />
                     </form>
-                    <div className="container"></div>
                 </div>
+                <div className="full-container desktop"></div>
             </div>
         </footer>
     );

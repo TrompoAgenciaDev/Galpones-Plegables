@@ -5,7 +5,6 @@
     width: 100%;
     height: 100%;
     min-height: 400px;
-    /* Base height for the background image */
 }
 
 .footer-top {
@@ -22,13 +21,12 @@ h4.mobile {
     width: 290px;
 }
 
-
 .footer-mid {
     padding: 70px 0;
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 0;
     z-index: 1;
 }
@@ -43,6 +41,7 @@ h4.mobile {
     content: "";
     top: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 1px;
     height: 100%;
@@ -59,11 +58,22 @@ h4.mobile {
     justify-content: flex-start;
 }
 
-.copy-container .container {
+.copy-container {
     display: flex;
     flex-direction: column-reverse;
-    padding: 20px 0;
-    gap: 50px;
+    padding: 20px 0 10px;
+    gap: 10px;
+}
+
+.copy-container .full-container {
+    width: 100%;
+    min-width: 0;
+    max-width: 320px;
+    height: 100%;
+}
+
+.copy-form {
+    width: 100%;
 }
 
 .copy-form h4 {
@@ -105,6 +115,8 @@ footer .menu-list {
     padding: 10px 0;
     width: 100%;
     outline: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .copy-form #info-email {
@@ -125,16 +137,7 @@ footer .menu-list {
     color: rgba(0, 0, 0, 0.4);
 }
 
-.btn-white {
-    background-color: var(--text-primary-color);
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.btn-orange {
-    background-color: var(--terciary-color);
-    color: var(--text-primary-color);
-}
+/* Botones y otros componentes globales ya están en index.css */
 
 
 
@@ -142,20 +145,31 @@ footer .menu-list {
 
     .footer-top,
     .footer-bottom,
-    .copy-container .container {
+    .copy-container {
         display: grid !important;
         grid-template-columns: 3fr 2fr 2fr;
+        padding: 0;
     }
 
-    .footer-mid {
-        display: grid !important;
+    .full-container.footer-mid {
+        display: grid;
         grid-template-columns: 6fr 3fr;
+        z-index: auto;
     }
 
     .footer-top .full-container,
     .footer-mid .full-container,
     .footer-bottom .full-container {
         padding: 20px;
+    }
+
+    .footer-top .full-container:first-child {
+        padding: 0;
+    }
+
+    .footer-bottom .full-container:first-child,
+    .copy-container .full-container:first-child {
+        padding-left: 50px;
     }
 
     .footer-mid::before {
@@ -171,8 +185,13 @@ footer .menu-list {
     }
 
     .footer-bottom {
-        grid-template-columns: 3fr 2fr 2fr;
-        padding: 50px;
+        position: relative;
+        z-index: auto;
+    }
+
+    .copy-container {
+        position: relative;
+        z-index: auto;
     }
 
     .footer-bottom .full-container {
@@ -183,17 +202,169 @@ footer .menu-list {
         align-items: flex-start;
     }
 
-    .copy-container{
-        padding: 0 0 20px;
-    }
-
     .info-group,
     .footer-logo {
         padding: 0;
         padding-top: 16px;
     }
 
-    .copy-form{
+    .copy-container .full-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .copy-form {
         padding: 0;
+    }
+
+    .copy-form h4 {
+        font-size: 18px;
+    }
+
+    .copy-container .full-container:nth-child(2),
+    .footer-bottom .full-container:nth-child(2),
+    .footer-bottom .full-container:nth-child(3) {
+        position: relative;
+        overflow: visible;
+    }
+
+    .copy-container .full-container:nth-child(2)::before,
+    .footer-bottom .full-container:nth-child(3)::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        bottom: 0;
+        background-color: var(--terciary-color);
+        z-index: 100;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        left: 0px;
+    }
+
+    .copy-container .full-container:nth-child(2)::before {
+        height: 648px;
+    }
+
+    .footer-bottom .full-container:nth-child(3)::before {
+        height: 280px;
+    }
+
+    .footer-mid .full-container:first-child{
+        position: relative;
+        z-index: 200;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .full-container.footer-top,
+    .full-container.footer-mid {
+        padding: 0;
+    }
+
+    .footer-top,
+    .footer-mid {
+        height: 380px;
+    }
+
+    .footer-top .full-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    .footer-top h4 {
+        width: 100%;
+        max-width: 250px;
+        font-size: 30px;
+    }
+
+    .full-container.footer-mid {
+        grid-template-columns: 5fr 2fr;
+    }
+
+    .footer-mid h4 {
+        width: 100%;
+        max-width: 700px;
+        font-size: 48px;
+    }
+
+    .footer-bottom,
+    .copy-container {
+        grid-template-columns: 3fr 2fr 2fr;
+        padding: 0;
+    }
+
+    .footer-bottom .full-container,
+    .copy-container .full-container {
+        height: 100%;
+        padding: 50px 20px;
+    }
+
+    .footer-bottom .full-container:nth-child(2)::before {
+        height: 387px;
+        left: 0;
+        top: -30%;
+    }
+
+    .copy-container .full-container:nth-child(2)::before {
+        left: 2px;
+    }
+
+    .footer-bottom .full-container:nth-child(3)::before {
+        height: 480px;
+        left: -3px;
+        bottom: 50px;
+    }
+
+    .copy-container .full-container:nth-child(2)::before {
+        height: 843px;
+        left: -5px;
+    }
+
+    .footer-top .full-container:nth-child(2){
+        border-left: 1px solid var(--text-primary-color);
+        border-right: 1px solid var(--text-primary-color);
+    }
+}
+
+@media (min-width: 1440px) {
+    .full-container.footer-mid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .footer-mid .full-container {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .footer-mid .full-container:first-child {
+        max-width: 800px;
+    }
+
+    .footer-mid .full-container:last-child {
+        max-width: 600px;
+    }
+
+    footer .menu-menuLeft {
+        padding-left: 0;
+    }
+
+    .footer-bottom .full-container:nth-child(3)::before {
+        height: 320px;
+        left: -3px;
+        bottom: 50px;
     }
 }

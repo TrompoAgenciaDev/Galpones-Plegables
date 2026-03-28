@@ -1,4 +1,18 @@
+import { motion } from "framer-motion"
 import "../styles/etapas.css"
+
+const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.15,
+            duration: 0.7,
+            ease: [0.215, 0.61, 0.355, 1],
+        },
+    }),
+};
 
 const Etapas = () => {
     return (
@@ -17,7 +31,14 @@ const Etapas = () => {
                         </p>
                     </div>
                     <div className="etapas-item">
-                        <div className="etapas-card bg-white">
+                        <motion.div 
+                            className="etapas-card bg-white"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                            custom={0}
+                            variants={cardVariants}
+                        >
                             <div className="header-item">
                                 <h5>Relevamiento</h5>
                                 <h4>01</h4>
@@ -27,8 +48,15 @@ const Etapas = () => {
                                     Analizamos el sitio, las condiciones del terreno y las necesidades operativas para definir la solución adecuada.
                                 </p>
                             </div>
-                        </div>
-                        <div className="etapas-card bg-white">
+                        </motion.div>
+                        <motion.div 
+                            className="etapas-card bg-white"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                            custom={1}
+                            variants={cardVariants}
+                        >
                             <div className="header-item">
                                 <h5>Propuesta</h5>
                                 <h4>02</h4>
@@ -38,8 +66,15 @@ const Etapas = () => {
                                     Diseñamos la configuración del galpón modular y presentamos la propuesta técnica según el uso requerido.
                                 </p>
                             </div>
-                        </div>
-                        <div className="etapas-card bg-white">
+                        </motion.div>
+                        <motion.div 
+                            className="etapas-card bg-white"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                            custom={2}
+                            variants={cardVariants}
+                        >
                             <div className="header-item">
                                 <h5>Montaje</h5>
                                 <h4>03</h4>
@@ -49,8 +84,15 @@ const Etapas = () => {
                                     Transportamos los módulos plegados y desplegamos la estructura directamente en planta sin necesidad de obra civil.
                                 </p>
                             </div>
-                        </div>
-                        <div className="etapas-card bg-white">
+                        </motion.div>
+                        <motion.div 
+                            className="etapas-card bg-white"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                            custom={3}
+                            variants={cardVariants}
+                        >
                             <div className="header-item">
                                 <h5>Operación</h5>
                                 <h4>04</h4>
@@ -60,7 +102,7 @@ const Etapas = () => {
                                     El galpón queda operativo en pocos días, permitiendo ampliar capacidad de almacenamiento, producción o logística.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

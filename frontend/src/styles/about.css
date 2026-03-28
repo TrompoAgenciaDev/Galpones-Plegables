@@ -39,6 +39,7 @@
     bottom: 0;
     left: 0;
     background-color: var(--secondary-color);
+    -webkit-clip-path: polygon(0 75%, 100% 60%, 100% 100%, 0 100%);
     clip-path: polygon(0 75%, 100% 60%, 100% 100%, 0 100%);
     z-index: 1;
 }
@@ -67,6 +68,7 @@
     }
 
     .about-container::after{
+        -webkit-clip-path: polygon(0 100%, 100% 25%, 100% 100%, 0 100%);
         clip-path: polygon(0 100%, 100% 25%, 100% 100%, 0 100%);
     }
 
