@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import '../styles/footer.css'
 import Menu from '../components/menus/Menu';
 
@@ -65,7 +66,13 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="full-container">
+                <motion.div 
+                    className="full-container"
+                    initial={{ "--border-grow": 0 }}
+                    whileInView={{ "--border-grow": 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                >
                     <div className="container info-group">
                         <div className="footer-contact-group">
                             <span className="upper-text text-white">TELÉFONO</span>
@@ -86,7 +93,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className="full-container copy-container bg-dark-blue">
                 <div className="full-container">
@@ -94,12 +101,18 @@ const Footer = () => {
                         © 2026 - diseñado x <a href="http://trompoagencia.com" target="_blank" rel="noopener noreferrer"><strong>trompo agencia</strong></a> Todos los derechos reservados
                     </p>
                 </div>
-                <div className="full-container">
+                <motion.div 
+                    className="full-container"
+                    initial={{ "--border-grow": 0 }}
+                    whileInView={{ "--border-grow": 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                >
                     <form className="footer-form copy-form">
                         <h4 className='text-white'>Solicitar información</h4>
                         <input type="email" id="info-email" name="email" placeholder="E-mail" required />
                     </form>
-                </div>
+                </motion.div>
                 <div className="full-container desktop"></div>
             </div>
         </footer>

@@ -119,18 +119,21 @@
         width: 1px;
         position: absolute;
         background-color: var(--text-primary-color);
+        transform: scaleY(var(--border-grow, 1)) !important;
     }
 
     .left-border::before {
         height: 100%;
         left: -50px;
         top: 0px;
+        transform-origin: top;
     }
 
     .right-border::before {
         height: 140px;
         right: -50px;
         bottom: 0px;
+        transform-origin: bottom;
     }
 
     .title-hero h1 {
@@ -146,11 +149,12 @@
 
     .subgroup-content.right-border::before {
         height: 100%;
+        transform-origin: bottom;
     }
 }
 
 @media (min-width: 1280px) {
-    .hero-container{
+    .hero-container {
         height: 100vh;
         height: 100svh;
     }

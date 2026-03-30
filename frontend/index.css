@@ -194,8 +194,12 @@ h6 {
 }
 
 .text-white a strong,
-.white-color strong{
+.white-color strong {
     font-weight: 700;
+}
+
+.text-orange {
+    color: var(--terciary-color);
 }
 
 .gray-color {
@@ -233,6 +237,7 @@ h6 {
     transform: translateX(-50%);
     height: 1px;
     background-color: var(--terciary-color);
+    transform: translateX(-50%) scaleX(var(--border-grow, 1)) !important;
 }
 
 .upper-text {
@@ -276,14 +281,10 @@ h6 {
     color: var(--text-primary-color);
 }
 
-
-
 .btn-desktop,
 .desktop {
     display: none;
 }
-
-
 
 /* Header */
 .header-content {

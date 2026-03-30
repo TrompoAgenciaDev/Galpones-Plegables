@@ -1,4 +1,4 @@
-.about-container{
+.about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,32 +7,32 @@
     position: relative;
 }
 
-.grid-about-home{
+.grid-about-home {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
     z-index: 10;
-    
+
 }
 
-.grid-item-about{
+.grid-item-about {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.grid-item-about img{
+.grid-item-about img {
     width: 100%;
     max-width: 200px;
 }
 
-.grid-item-about:last-child{
+.grid-item-about:last-child {
     margin-top: 150px;
     z-index: 100;
 }
 
-.about-container::after{
-    content:"";
+.about-container::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,44 +46,56 @@
 
 .grid-item-about h2,
 .grid-item-about h5,
-.grid-item-about p{
+.grid-item-about p {
     color: var(--text-primary-color);
 }
 
 @media (min-width: 1024px) {
 
-    .about-container{
-        height: 600px;
+    .about-container {
+        height: 700px;
     }
 
-    .about-container .grid-item-about:first-child{
+    .about-container .grid-item-about:first-child {
         display: none;
     }
 
-    .grid-about-home{
+    .grid-about-home {
         grid-template-columns: 1fr 1fr;
         height: 100%;
         padding: 60px 0;
         font-size: 18px;
     }
 
-    .about-container::after{
+    .about-container::after {
         -webkit-clip-path: polygon(0 100%, 100% 25%, 100% 100%, 0 100%);
         clip-path: polygon(0 100%, 100% 25%, 100% 100%, 0 100%);
     }
 
-    .grid-item-about:last-child{
+    .grid-item-about:last-child {
         margin-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        padding: 60px 0 0 50px;
+        padding: 0 0 40px;
+    }
+
+    .grid-item-about:nth-child(2) {
+        padding: 50px 0 0;
     }
 }
 
 @media (min-width: 1280px) {
-    .grid-about-home{
+    .grid-about-home {
         font-size: 20px;
+    }
+
+    .grid-item-about:nth-child(2) p {
+        font-size: 22px;
+    }
+
+    .grid-item-about img {
+        margin-top: 20px;
     }
 }

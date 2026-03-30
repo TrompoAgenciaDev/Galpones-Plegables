@@ -5,7 +5,7 @@ const About = () => {
         <section className="full-container blue-color about-container">
             <div className="container grid-about-home">
                 <div className="grid-item-about">
-                    <h2>Infraestructura <br/> Industrial Plegable.</h2>
+                    <h2>Infraestructura <br /> Industrial Plegable.</h2>
                     <h5>
                         Espacio industrial inmediato para almacenamiento, producción y logística.
                     </h5>
@@ -26,7 +26,7 @@ const About = () => {
                         Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
                     </p>
                     <p className="upper-text">
-                        Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
+                        Trabajamos con industrias que necesitan espacio inmediato para almacenamiento, producción o logística, ofreciendo estructuras seguras, reubicables y preparadas para entornos industriales.
                     </p>
                 </div>
             </div>

@@ -1,0 +1,32 @@
+.full-container.clients {
+    display: none;
+}
+
+
+@media (min-width: 1024px) {
+    .clients {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-clients {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-client:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item-client h4 {
+        width: 100%;
+        max-width: 300px;
+    }
+}

@@ -8,10 +8,7 @@ const Hero = () => {
     return (
         <>
             <section className="full-container hero-container">
-                <motion.video
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
+                <video
                     autoPlay
                     muted
                     loop
@@ -21,9 +18,15 @@ const Hero = () => {
                     <source src={`${base}assets/hero/hero.webm`} type="video/webm" />
                     <source src={`${base}assets/hero/hero.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
-                </motion.video>
+                </video>
                 <div className="container">
-                    <div className="subtitle-section">
+                    <motion.div 
+                        className="subtitle-section"
+                        initial={{ "--border-grow": 0 }}
+                        whileInView={{ "--border-grow": 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.2, ease: "easeOut" }}
+                    >
                         <div className="subtitle-left"></div>
                         <div className="subtitle-body left-border">
                             <div className="subgroup-container">
@@ -34,8 +37,14 @@ const Hero = () => {
                                 <h5 className="subtitle-hero">Espacio industrial inmediato para almacenamiento, producción y logística.</h5>
                             </div>
                         </div>
-                    </div>
-                    <div className="title-container">
+                    </motion.div>
+                    <motion.div 
+                        className="title-container"
+                        initial={{ "--border-grow": 0 }}
+                        whileInView={{ "--border-grow": 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.2, ease: "easeOut" }}
+                    >
                         <div className="title-section">
                             <div className="title-hero right-border">
                                 <h1 className="">Infraestructura</h1>
@@ -54,7 +63,7 @@ const Hero = () => {
                                 <div className="subgroup-content"></div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>
