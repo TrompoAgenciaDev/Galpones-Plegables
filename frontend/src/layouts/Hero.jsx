@@ -34,7 +34,7 @@ const Hero = () => {
                                 <div className="subgroup-content"></div>
                             </div>
                             <div className="subtitle-content">
-                                <h5 className="subtitle-hero">Espacio industrial inmediato para almacenamiento, producción y logística.</h5>
+                                <h5 className="subtitle-hero">Espacios industriales en alquiler inmediato para almacenamiento, producción y logística.</h5>
                             </div>
                         </div>
                     </motion.div>
