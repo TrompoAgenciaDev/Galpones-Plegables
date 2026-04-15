@@ -1,0 +1,337 @@
+/* ---------- Reset & Base ---------- */
+#sib-form *,
+#sib-form *::before,
+#sib-form *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Neue Haas Grotesk Display Pro", "Montserrat", sans-serif;
+}
+
+/* ---------- Placeholders ---------- */
+#sib-form input::placeholder,
+#sib-form textarea::placeholder {
+  color: #9e9e9e;
+}
+
+#sib-form input::-webkit-input-placeholder,
+#sib-form textarea::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+#sib-form input:-moz-placeholder,
+#sib-form textarea:-moz-placeholder {
+  color: #9e9e9e;
+  opacity: 1;
+}
+
+#sib-form input::-moz-placeholder,
+#sib-form textarea::-moz-placeholder {
+  color: #9e9e9e;
+  opacity: 1;
+}
+
+#sib-form input:-ms-input-placeholder,
+#sib-form textarea:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+/* ---------- Layout ---------- */
+#sib-form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  /* Increased gap for labels */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  display: none;
+}
+
+.form-warning {
+  font-size: 13px;
+  color: #262626;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+#sib-form input,
+#sib-form textarea,
+#sib-form select {
+  font-family: inherit;
+}
+
+/* Inputs */
+#sib-form input:not([type="checkbox"]),
+#sib-form textarea,
+#sib-form select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--terciary-color);
+  background-color: transparent;
+  padding: 10px 0;
+  outline: none;
+  border-radius: 0;
+  color: #7a7a7a;
+}
+
+#sib-form textarea {
+  resize: vertical;
+}
+
+/* ---------- SMS Section ---------- */
+.sms-section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ---------- Submit Button ---------- */
+#sib-form button[type="submit"] {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  background-color: var(--terciary-color);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+  border: none;
+}
+
+#sib-form button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Submit Container ---------- */
+.submit-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/* ---------- Phone Input ---------- */
+.phone-input {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* ---------- Labels ---------- */
+.form__label-row--horizontal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.form__entry.entry_mcq label.entry__label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 0 8px;
+  background-color: #ffffff;
+}
+
+/* ---------- Checkbox ---------- */
+.checkbox__label {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.mcq-choices {
+  width: 100%;
+  max-width: 280px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 0 20px;
+}
+
+.entry__choice .input_replaced {
+  width: 20px;
+  height: 20px;
+}
+
+.entry__choice input[type="checkbox"]:active+.checkbox {
+  color: aqua;
+  background-color: brown;
+}
+
+/* ---------- reCAPTCHA ---------- */
+.g-recaptcha {
+  width: 100% !important;
+  min-width: 320px;
+  height: 100px;
+  -webkit-transform: scale(0.77);
+  -moz-transform: scale(0.77);
+  -ms-transform: scale(0.77);
+  -o-transform: scale(0.77);
+  transform: scale(0.77);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.g-recaptcha,
+#rc-anchor-container {
+  min-height: 78px;
+  width: 100%;
+  min-width: 320px;
+}
+
+.sib-form {
+  background-color: var(--text-primary-color);
+  padding: 50px;
+  z-index: 999999;
+}
+
+.sib-form h5 {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 768px) {
+
+  .sib-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+  }
+
+  #sib-form input,
+  #sib-form textarea,
+  #sib-form select {
+    font-size: 15px;
+  }
+
+  #sib-form small {
+    font-size: 13.5px;
+  }
+
+  .g-recaptcha {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #sib-form input,
+  #sib-form textarea,
+  #sib-form select {
+    font-size: 16px;
+  }
+
+  #sib-form small {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  #sib-form input,
+  #sib-form textarea {
+    font-size: 16px;
+  }
+}

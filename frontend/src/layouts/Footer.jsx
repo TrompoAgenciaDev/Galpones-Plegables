@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import '../styles/footer.css'
 import Menu from '../components/menus/Menu';
-
+import FormIndex from '../components/forms/FormIndex';
 
 const Footer = () => {
     const base = import.meta.env.BASE_URL;
@@ -35,20 +35,18 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="full-container footer-mid bg-white">
-                <div className="full-container bg-white position">
-                    <div className="container cta-presupuesto">
-                        <h4>¿Necesitás ampliar tu infraestructura de forma rápida y adaptable?</h4>
-                    </div>
-                </div>
-                <div className="full-container bg-white position">
+            <div className="full-container footer-mid"
+                style={{ backgroundImage: `url(${base}assets/img/form/form-bg.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+                <div className="full-container position">
                     <div className="container">
-                        <form className="footer-form orange">
-                            <input type="email" id="presupuesto-email" name="email" placeholder="E-mail" required />
-                            <button type="submit" className="btn btn-orange">Solicitar presupuesto</button>
-                        </form>
+
                     </div>
                 </div>
+                <div className="full-container position">
+                    <div className="container">
+                    </div>
+                </div>
+                <FormIndex location="footer" />
             </div>
             <div className="full-container footer-bottom bg-dark-blue">
                 <div className="full-container">
@@ -66,7 +64,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <motion.div 
+                <motion.div
                     className="full-container"
                     initial={{ "--border-grow": 0 }}
                     whileInView={{ "--border-grow": 1 }}
@@ -101,7 +99,7 @@ const Footer = () => {
                         © 2026 - diseñado x <a href="http://trompoagencia.com" target="_blank" rel="noopener noreferrer"><strong>trompo agencia</strong></a> Todos los derechos reservados
                     </p>
                 </div>
-                <motion.div 
+                <motion.div
                     className="full-container"
                     initial={{ "--border-grow": 0 }}
                     whileInView={{ "--border-grow": 1 }}

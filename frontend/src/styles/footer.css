@@ -270,9 +270,12 @@ footer .menu-list {
         padding: 0;
     }
 
-    .footer-top,
-    .footer-mid {
+    .footer-top{
         height: 380px;
+    }
+
+    .footer-mid{
+        height: 1100px;
     }
 
     .footer-top .full-container {
@@ -323,13 +326,13 @@ footer .menu-list {
     }
 
     .footer-bottom .full-container:nth-child(3)::before {
-        height: 480px;
+        height: 1563px;
         left: -3px;
         bottom: 50px;
     }
 
     .copy-container .full-container:nth-child(2)::before {
-        height: 843px;
+        height: 1563px;
         left: -5px;
     }
 
@@ -366,8 +369,8 @@ footer .menu-list {
     }
 
     .footer-bottom .full-container:nth-child(3)::before {
-        height: 320px;
-        left: -3px;
+        height: 1347px;
+        left: -4px;
         bottom: 50px;
     }
 }

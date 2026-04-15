@@ -1,4 +1,4 @@
-.etapas-container{
+.etapas-container {
     padding: 70px 0;
     border-top: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
@@ -7,7 +7,7 @@
     z-index: 0;
 }
 
-.etapas-container::before{
+.etapas-container::before {
     content: "";
     width: 1px;
     height: 100%;
@@ -20,28 +20,28 @@
     z-index: 1;
 }
 
-.etapas-grid{
+.etapas-grid {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     gap: 70px;
     z-index: 9999;
 }
 
 
-.etapas-item{
+.etapas-item {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.etapas-item:first-child{
+.etapas-item:first-child {
     gap: 30px;
-    padding: 30px;
+    padding: 0;
 }
 
-.header-item{
+.header-item {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -49,35 +49,37 @@
     padding: 20px;
 }
 
-.header-item h5{
-    color: var(--terciary-color);
-}
 
 .header-item h4,
-.header-item h5{
+.header-item h5 {
     font-weight: 500;
 }
 
 
-.content-item{
+.content-item {
     border-top: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     padding: 20px;
 }
 
 
-@media (min-width: 1024px){
-    .etapas-grid{
+@media (min-width: 1024px) {
+
+    .etapas-container {
+        padding: 100px 0;
+    }
+
+    .etapas-grid {
         grid-template-columns: 2fr 3fr;
         gap: 30px;
         padding: 100px 0;
     }
 
-    .etapas-container::before{
+    .etapas-container::before {
         left: 33.33%;
     }
 
-    .etapas-container::after{
+    .etapas-container::after {
         content: "";
         width: 1px;
         height: 100%;
@@ -92,21 +94,21 @@
 }
 
 
-@media (min-width: 1280px){
-    .etapas-container::before{
+@media (min-width: 1280px) {
+    .etapas-container::before {
         left: 33%;
     }
 
-    .etapas-container::after{
+    .etapas-container::after {
         right: 33%;
     }
 
-    .item-card-text{
+    .item-card-text {
         width: 100%;
         max-width: 360px;
     }
 
-    .etapas-item:last-child{
+    .etapas-item:last-child {
         padding: 0 70px;
     }
 }
