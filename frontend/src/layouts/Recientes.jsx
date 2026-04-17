@@ -1,5 +1,5 @@
 import "../styles/recientes.css"
-import ProductLoop from "../components/loop-products/ProductLoop.jsx"
+import NotasLoop from "../components/loop-products/NotasLoop.jsx"
 
 const Recientes = () => {
     return (
@@ -9,7 +9,7 @@ const Recientes = () => {
                     <h2>Proyectos recientes</h2>
                 </div>
                 <div className="container">
-                    <ProductLoop/>
+                    <NotasLoop/>
                 </div>
             </section>
         </>

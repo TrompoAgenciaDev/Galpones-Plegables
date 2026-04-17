@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Coca-cola",
+    "galpon": "Galpón Plegable 7.3",
+    "default_image": "assets/img/products/plegable-7-3/plegable 7-3-azul.png",
+    "hover_image": "assets/img/products/plegable-7-3/plegable-7-3.png",
+    "logo_img": "assets/img/notas/coca.png"
+  },
+  {
+    "id": 2,
+    "name": "Vallé Equipamientos",
+    "galpon": "Galpón Plegable 11.4",
+    "default_image": "assets/img/products/plegable-11-4/plegable 11-4 azlu.png",
+    "hover_image": "assets/img/products/plegable-11-4/plegable 11-4.png",
+    "logo_img": "assets/img/notas/valle.png"
+  }
+]

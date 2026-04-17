@@ -7,19 +7,6 @@
     z-index: 0;
 }
 
-.etapas-container::before {
-    content: "";
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: var(--primary-color);
-    z-index: 1;
-}
-
 .etapas-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -28,7 +15,6 @@
     gap: 70px;
     z-index: 9999;
 }
-
 
 .etapas-item {
     display: flex;
@@ -49,19 +35,16 @@
     padding: 20px;
 }
 
-
 .header-item h4,
 .header-item h5 {
     font-weight: 500;
 }
-
 
 .content-item {
     border-top: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     padding: 20px;
 }
-
 
 @media (min-width: 1024px) {
 
@@ -73,10 +56,6 @@
         grid-template-columns: 2fr 3fr;
         gap: 30px;
         padding: 100px 0;
-    }
-
-    .etapas-container::before {
-        left: 33.33%;
     }
 
     .etapas-container::after {
@@ -93,12 +72,7 @@
     }
 }
 
-
 @media (min-width: 1280px) {
-    .etapas-container::before {
-        left: 33%;
-    }
-
     .etapas-container::after {
         right: 33%;
     }

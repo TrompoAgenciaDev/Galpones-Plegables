@@ -11,9 +11,6 @@ const Clients = () => {
         "comar-logo.png"
     ];
 
-    // Duplicate list once for a seamless infinite loop
-    const infiniteClients = [...clients, ...clients];
-
     return (
         <section className="full-container clients">
             <div className="container grid-clients">
@@ -23,21 +20,14 @@ const Clients = () => {
                 <div className="item-client slider-container">
                     <div className="inner-gradient left"></div>
                     <div className="inner-gradient right"></div>
-                    <motion.div
-                        className="slider-track"
-                        animate={{ x: ["0%", "-50%"] }}
-                        transition={{
-                            repeat: Infinity,
-                            duration: 50,
-                            ease: "linear"
-                        }}
-                    >
-                        {[...clients, ...clients, ...clients].map((client, i) => (
+                    
+                    <div className="slider-track">
+                        {Array(10).fill(clients).flat().map((client, i) => (
                             <div className="slide-item" key={i}>
-                                <img src={`${base}assets/img/clients/${client}`} alt="Client Logo" />
+                                <img src={`${base}assets/img/clients/${client}`} alt={`Client Logo`} />
                             </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>
