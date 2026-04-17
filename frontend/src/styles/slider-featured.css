@@ -3,7 +3,6 @@
     flex-direction: column;
     margin-top: 3px;
     padding: 0;
-    border-bottom: 1px solid var(--primary-color);
 }
 
 .full-container.slider-featured .full-container {
@@ -49,6 +48,7 @@
     align-items: center;
     background-color: var(--text-primary-color);
     padding: 0;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .slider-card {
@@ -136,7 +136,6 @@
 
     .pointer-container .slider-card.active {
         justify-content: flex-end;
-        border-bottom: 1px solid var(--text-primary-color);
     }
 
     .title-slide-container h5 {

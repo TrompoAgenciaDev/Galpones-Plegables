@@ -133,12 +133,11 @@
 
 .text-accordion {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: var(--primary-color);
-    font-weight: 700;
-    text-transform: uppercase;
     text-align: left;
+    font-weight: 400;
 }
 
 
@@ -178,8 +177,8 @@
         max-width: 100%;
     }
 
-    .text-accordion.upper-text {
-        max-width: 350px;
+    .text-accordion{
+        max-width: 450px;
         align-self: center;
         font-size: 18px;
     }

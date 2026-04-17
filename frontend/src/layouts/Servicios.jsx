@@ -48,10 +48,30 @@ const Servicios = () => {
                         <h3 className="service-section-title">Características</h3>
                         <div className="full-container service-accordion">
                             {[
-                                { title: "Plegabilidad", text: "REDUCCIÓN DE VOLUMEN QUE FACILITA EL TRANSPORTE", img: "plegabilidad.png" },
-                                { title: "Modularidad", text: "SISTEMA DE MÓDULOS ACOPLABLES QUE PERMITE AMPLIAR O REDUCIR LA SUPERFICIE SEGÚN LA NECESIDAD DE CADA PROYECTO.", img: "modularidad.png" },
-                                { title: "Portabilidad", text: "ESTRUCTURAS LIVIANAS Y RESISTENTES DISEÑADAS PARA SER TRASLADADAS DE UN PUNTO A OTRO SIN COMPLICACIONES LOGÍSTICAS.", img: "portabilidad.png" },
-                                { title: "Velocidad", text: "INSTALACIÓN EN TIEMPOS RÉCORD, PERMITIENDO QUE TU OPERACIÓN NO SE DETENGA Y SE ADAPTE RÁPIDAMENTE.", img: "velocidad.png" }
+                                { title: "Plegabilidad", text: (
+                            <>
+                                <strong>La plegabilidad de nuestras estructuras permite una reducción significativa del volumen, optimizando el transporte y el almacenamiento.</strong><br/><br/>
+                                Además, facilita la logística al reducir costos operativos y tiempos de traslado, permitiendo desplegar y replegar los galpones de forma eficiente sin comprometer su integridad estructural ni funcionalidad.
+                            </>
+                        ), img: "plegabilidad.png" },
+                        { title: "Modularidad", text: (
+                            <>
+                                <strong>El sistema modular permite configurar las estructuras según las necesidades específicas de cada operación, ajustando dimensiones y capacidad de forma flexible.</strong><br/><br/>
+                                Esto facilita la adaptación a distintos usos y etapas del proyecto, acompañando el crecimiento operativo sin requerir modificaciones complejas.
+                            </>
+                        ), img: "modularidad.png" },
+                        { title: "Portabilidad", text: (
+                            <>
+                                <strong>Las estructuras están diseñadas para ser trasladadas de manera práctica, sin necesidad de desmontajes completos.</strong><br/><br/>
+                                Esto permite reubicar los galpones rápidamente, asegurando continuidad operativa en entornos dinámicos y cambiantes.
+                            </>
+                        ), img: "portabilidad.png" },
+                        { title: "Velocidad", text: (
+                            <>
+                                <strong>El sistema permite una instalación ágil, alcanzando hasta 250 m² por día según las condiciones del proyecto.</strong><br/><br/>
+                                Esto reduce significativamente los tiempos de puesta en marcha, permitiendo contar con espacios operativos en pocos días.
+                            </>
+                        ), img: "velocidad.png" }
                             ].map((item, index) => {
                                 const isOpen = activeIndex === index;
 
@@ -150,7 +170,7 @@ const Servicios = () => {
                                                         exit={{ opacity: 0, y: 10, height: 0 }}
                                                         transition={{ duration: 0.4, delay: 0.1 }}
                                                     >
-                                                        <p className="text-accordion upper-text">
+                                                        <p className="text-accordion">
                                                             {item.text}
                                                         </p>
                                                     </motion.div>
