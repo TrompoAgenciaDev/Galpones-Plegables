@@ -25,7 +25,7 @@ const textMotion = {
 };
 
 const Servicios = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const handleToggle = useCallback((index) => {
         setActiveIndex((prev) => (prev === index ? null : index));
@@ -39,7 +39,7 @@ const Servicios = () => {
             <section className="full-container bg-white services-section">
                 <div className="container grid-services">
                     <motion.div
-                        className="service-item border-top-orange"
+                        className="service-item"
                         initial={{ "--border-grow": 0 }}
                         whileInView={{ "--border-grow": 1 }}
                         viewport={{ once: true }}
@@ -73,7 +73,7 @@ const Servicios = () => {
                                             initial={false}
                                             animate={{
                                                 width: isOpen ? "50%" : "120px",
-                                                height: isOpen ? "340px" : "50px"
+                                                height: isOpen ? "300px" : "50px"
                                             }}
                                             transition={{ duration: 0.5, ease: [0.215, 0.61, 0.355, 1] }}
                                         >
@@ -99,14 +99,14 @@ const Servicios = () => {
                                                 aria-expanded={isOpen}
                                                 className="accordion-header-btn"
                                             >
-                                                <motion.h6
+                                                <motion.h4
                                                     className="accordion-title"
                                                     initial={false}
-                                                    animate={{ fontSize: isOpen ? "32px" : "24px", fontWeight: isOpen ? 700 : 500 }}
+                                                    animate={{ fontSize: isOpen ? "40px" : "28px", fontWeight: isOpen ? 700 : 500 }}
                                                     transition={{ duration: 0.3 }}
                                                 >
                                                     {item.title}
-                                                </motion.h6>
+                                                </motion.h4>
 
                                                 <span className="accordion-icon-btn" aria-hidden="true">
                                                     <AnimatePresence mode="popLayout" initial={false}>
@@ -150,7 +150,7 @@ const Servicios = () => {
                                                         exit={{ opacity: 0, y: 10, height: 0 }}
                                                         transition={{ duration: 0.4, delay: 0.1 }}
                                                     >
-                                                        <p className="text-accordion">
+                                                        <p className="text-accordion upper-text">
                                                             {item.text}
                                                         </p>
                                                     </motion.div>

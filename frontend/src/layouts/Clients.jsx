@@ -7,8 +7,7 @@ const Clients = () => {
     const clients = [
         "cocacola.png",
         "valle.png",
-        "inomax.png",
-        "comar-logo.png"
+        "inomax.png"
     ];
 
     return (

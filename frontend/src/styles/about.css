@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
     position: relative;
     overflow: hidden;
+    padding: 0;
+    gap: 50px;
 }
 
 .grid-about-home {
@@ -13,7 +14,6 @@
     grid-template-columns: 1fr;
     gap: 50px;
     z-index: 10;
-
 }
 
 .grid-item-about {
@@ -42,24 +42,30 @@
     position: relative;
 }
 
-.grid-about-home:last-child::before{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 150%;
-    top: 0;
-    left: 0;
-    background-color: var(--text-primary-color);
-    z-index: 999;
-}
-
-.grid-about-home:last-child .grid-item-about:last-child{
+.grid-about-home:last-child .grid-item-about{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 16px;
+}
+
+.grid-item-about .about-render{
+    width: 100%;
+    max-width: 400px;
+}
+
+.grid-about-home:nth-child(2){
+    padding: 50px 0;
+}
+
+.grid-about-home:nth-child(2) .grid-item-about{
+    padding-right: 100px;
+}
+
+.grid-about-home:last-child .grid-item-about{
+    padding-bottom: 70px;
 }
 
 
@@ -75,8 +81,13 @@
         font-size: 18px;
     }
 
-    .grid-about-home:first-child{
-        padding: 60px 0;
+    .grid-about-home:first-child .grid-item-about:nth-child(2),
+    .grid-about-home:first-child .grid-item-about:last-child{
+        padding: 200px 0 0;
+    }
+
+    .grid-about-home:first-child .grid-item-about:nth-child(2){
+        padding-right: 50px;
     }
 
     .about-container::after {
@@ -99,10 +110,6 @@
 }
 
 @media (min-width: 1280px) {
-
-    .full-container.about-container{
-        padding: 100px 0;
-    }
 
     .grid-about-home {
         font-size: 20px;

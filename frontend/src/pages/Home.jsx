@@ -15,7 +15,6 @@ const Home = () => {
       <Servicios />
       <Etapas />
       <Recientes />
-      <CarruselFull />
       <SliderFeatured/>
       <Clients/>
     </>

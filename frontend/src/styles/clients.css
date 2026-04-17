@@ -75,7 +75,7 @@
 
     .grid-clients {
         display: grid;
-        grid-template-columns: 2fr 5fr;
+        grid-template-columns: 2fr 3fr;
         gap: 50px;
         text-align: left;
     }

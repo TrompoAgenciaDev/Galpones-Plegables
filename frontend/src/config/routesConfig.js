@@ -23,6 +23,7 @@ const routesConfig = {
         { path: "/montaje", label: "Montaje", component: Montaje },
         { path: "/proyectos", label: "Proyectos", component: Proyectos },
         { path: "/contacto", label: "Contacto", component: Contacto },
+        { path: "#", label: "Presupuestar", component: null },
     ],
 }
 

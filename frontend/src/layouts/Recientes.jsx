@@ -6,7 +6,7 @@ const Recientes = () => {
         <>
             <section className="full-container bg-white recientes-container">
                 <div className="container">
-                    <h2>Proyectos recientes</h2>
+                    <h1>Proyectos recientes</h1>
                 </div>
                 <div className="container">
                     <NotasLoop/>

@@ -18,23 +18,24 @@ const About = () => {
                             Una solución robusta, reubicable y adaptable para operaciones industriales, logísticas y productivas.
                         </strong>
                     </p>
-                    <img className="about-logo" src={`${import.meta.env.BASE_URL}assets/img/clients/comar-logo.png`} alt="Comar Construcciones" />
                 </div>
-                <div className="grid-item-about">
+                <div className="grid-item-about left-border">
                     <img className="about-render" src={`${import.meta.env.BASE_URL}assets/img/about.png`} alt="Comar Construcciones" />
+                </div>
+            </div>
+
+            <div className="container grid-about-home">
+                <div className="grid-item-about">
                     <p className="upper-text">
                         Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
-                    </p>
-                    <p className="upper-text">
-                        Trabajamos con industrias que necesitan espacio inmediato para almacenamiento, producción o logística, ofreciendo estructuras seguras, reubicables y preparadas para entornos industriales.
-                    </p>
+                    </p>                    
                 </div>
             </div>
             <div className="container grid-about-home">
-                <div className="grid-item-about">
-                    
+                <div className="grid-item-about left-border">
+                    <img className="about-logo" src={`${import.meta.env.BASE_URL}assets/img/clients/comar-logo.png`} alt="Comar Construcciones" />                    
                 </div>
-                <div className="grid-item-about">
+                <div className="grid-item-about left-border">
                     <img className="about-logo-footer" src={`${import.meta.env.BASE_URL}assets/img/inpi.png`} alt="Instituto Nacional de la Propiedad Industrial" />
                     <p>Protegido mediante Modelo Industrial, registrado ante el Instituto Nacional de la Propiedad Industrial.</p>
                 </div>
