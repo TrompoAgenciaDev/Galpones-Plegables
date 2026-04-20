@@ -52,7 +52,9 @@ const Footer = () => {
                 <div className="full-container">
                     <div className="container">
                         <div className="footer-logo">
-                            <img src={`${base}logo.svg`} alt="Logo" />
+                            <a href="/">
+                                <img src={`${base}logo.svg`} alt="Logo" />
+                            </a>
                         </div>
                     </div>
                 </div>

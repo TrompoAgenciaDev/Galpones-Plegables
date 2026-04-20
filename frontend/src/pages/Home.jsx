@@ -10,7 +10,11 @@ import Clients from "../layouts/Clients.jsx"
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Hero
+       titulo1="Infraestructura"
+       titulo2="Industria Plegable."
+       subtitulo="Espacios industriales en alquiler inmediato para almacenamiento, producción y logística."
+      />
       <About />
       <Servicios />
       <Etapas />

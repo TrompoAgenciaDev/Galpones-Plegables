@@ -48,7 +48,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 15px;
-  /* Increased gap for labels */
 }
 
 .form-group {
@@ -276,7 +275,7 @@
 
 .sib-form {
   background-color: var(--text-primary-color);
-  padding: 50px;
+  padding: 20px;
   z-index: 999999;
 }
 
@@ -293,7 +292,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 500px;
+    padding: 50px 30px;
   }
 
   #sib-form input,

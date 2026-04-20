@@ -35,6 +35,7 @@
 .grid-item-about h5,
 .grid-item-about p {
     color: var(--text-primary-color);
+    width: 100%;
 }
 
 
@@ -47,17 +48,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
 }
 
 .grid-item-about .about-render{
     width: 100%;
-    max-width: 400px;
-}
-
-.grid-about-home:nth-child(2){
-    padding: 50px 0;
+    max-width: 600px;
 }
 
 .grid-about-home:nth-child(2) .grid-item-about{
@@ -65,11 +62,36 @@
 }
 
 .grid-about-home:last-child .grid-item-about{
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
+.about-icon{    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--text-primary-color);
+    align-self: start;
+    gap: 8px;
+    padding: 0 8px;
+    margin-top: 50px;
+}
+
+.about-icon svg{
+    width: 30px;
+    height: 30px;
+}
+
+.about-icon p{
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 @media (min-width: 1024px) {
+
+    .full-container.about-container {
+        gap: 120px;
+    }
 
     .about-container .grid-about-home:first-child .grid-item-about:first-child {
         display: none;
@@ -83,11 +105,7 @@
 
     .grid-about-home:first-child .grid-item-about:nth-child(2),
     .grid-about-home:first-child .grid-item-about:last-child{
-        padding: 200px 0 0;
-    }
-
-    .grid-about-home:first-child .grid-item-about:nth-child(2){
-        padding-right: 50px;
+        padding: 120px 0 0;
     }
 
     .about-container::after {
@@ -104,8 +122,13 @@
         padding: 0 0 40px;
     }
 
-    .grid-item-about:nth-child(2) {
-        padding: 50px 0 0;
+    .about-text{
+        width: 460px;
+        font-size: 32px;
+    }
+
+    .grid-about-home:last-child .grid-item-about{
+        padding-bottom: 50px;
     }
 }
 
@@ -119,12 +142,20 @@
         font-size: 22px;
     }
 
-    .about-logo {
-        margin-top: 20px;
-    }
-
     .about-render{
         width: 100%;
         height: auto;
+    }
+
+    .about-text{
+        font-size: 35px;
+    }
+
+    .about-icon{
+        margin-top: 70px;
+    }
+
+    .about-icon p{
+        font-size: 18px;
     }
 }

@@ -1,5 +1,4 @@
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import "../styles/etapas.css"
 
 const cardVariants = {
@@ -13,8 +12,28 @@ const cardVariants = {
             ease: [0.215, 0.61, 0.355, 1],
         },
     }),
-    hover: {
-        scale: 1.02,
+};
+
+const imageVariants = {
+    hidden: { 
+        height: 0, 
+        opacity: 0,
+        marginTop: 0
+    },
+    hover: { 
+        height: "auto", 
+        opacity: 1,
+        marginTop: 20,
+        transition: {
+            height: {
+                duration: 0.4,
+                ease: "easeOut"
+            },
+            opacity: {
+                duration: 0.3,
+                delay: 0.1
+            }
+        }
     },
 };
 
@@ -46,11 +65,7 @@ const etapasCards = [
 ];
 
 const Etapas = () => {
-    const [hoveredIndex, setHoveredIndex] = useState(null);
     const base = import.meta.env.BASE_URL;
-    const currentImage = hoveredIndex !== null
-        ? `${base}assets/img/etapas/${etapasCards[hoveredIndex].image}`
-        : null;
 
     return (
         <section className="full-container bg-gray-light etapas-container"
@@ -65,21 +80,6 @@ const Etapas = () => {
                     <p className="upper-text text-white">
                         Desde el relevamiento inicial hasta el montaje final, nuestro sistema permite implementar infraestructura industrial de forma rápida, segura y eficiente.
                     </p>
-                    <div className="etapas-image-wrapper">
-                        <AnimatePresence mode="wait">
-                            {currentImage && (
-                                <motion.img
-                                    key={currentImage}
-                                    src={currentImage}
-                                    alt="Etapas del proyecto"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -20 }}
-                                    transition={{ duration: 0.35, ease: "easeOut" }}
-                                />
-                            )}
-                        </AnimatePresence>
-                    </div>
                 </div>
                 <div className="etapas-item">
                     {etapasCards.map((item, index) => (
@@ -90,8 +90,6 @@ const Etapas = () => {
                             whileInView="visible"
                             whileHover="hover"
                             viewport={{ once: true, amount: 0.2 }}
-                            onHoverStart={() => setHoveredIndex(index)}
-                            onHoverEnd={() => setHoveredIndex(null)}
                             custom={index}
                             variants={cardVariants}
                         >
@@ -107,6 +105,16 @@ const Etapas = () => {
                                     <path d="M5 12H19 M12 5V19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                                 </svg>
                             </div>
+                            
+                            <motion.div 
+                                className="etapas-card-image"
+                                variants={imageVariants}
+                            >
+                                <img 
+                                    src={`${base}assets/img/etapas/${item.image}`} 
+                                    alt={item.title} 
+                                />
+                            </motion.div>
                         </motion.div>
                     ))}
                 </div>

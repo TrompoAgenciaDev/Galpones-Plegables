@@ -1,0 +1,42 @@
+.contact-hero{
+    height: 500px;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 10px;
+    gap: 50px;
+}
+
+.social-container{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.social-container svg path{
+    fill: var(--text-primary-color);
+}
+
+.social-container svg{    
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 1024px) {
+    .contact-hero{
+        height: 800px;
+    }
+
+    .contact-grid{
+        height: 500px;
+        grid-template-columns: 3fr 2fr;
+    }
+}

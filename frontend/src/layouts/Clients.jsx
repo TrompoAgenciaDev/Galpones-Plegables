@@ -6,7 +6,7 @@ const Clients = () => {
 
     const clients = [
         "cocacola.png",
-        "valle.png",
+        "valle2.png",
         "inomax.png"
     ];
 
@@ -21,9 +21,9 @@ const Clients = () => {
                     <div className="inner-gradient right"></div>
                     
                     <div className="slider-track">
-                        {Array(10).fill(clients).flat().map((client, i) => (
+                        {[...clients, ...clients].map((client, i) => (
                             <div className="slide-item" key={i}>
-                                <img src={`${base}assets/img/clients/${client}`} alt={`Client Logo`} />
+                                <img src={`${base}assets/img/clients/${client}?v=2`} alt={`Client Logo`} />
                             </div>
                         ))}
                     </div>

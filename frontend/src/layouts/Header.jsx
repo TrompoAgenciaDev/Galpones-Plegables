@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Menu from "../components/menus/Menu";
+import '../styles/header.css';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);

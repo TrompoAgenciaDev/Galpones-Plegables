@@ -26,17 +26,7 @@
     padding: 0;
 }
 
-.etapas-image-wrapper {
-    display: block;
-}
-
-.etapas-image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-}
+/* Removed .etapas-image-wrapper styles as image is now inside cards */
 
 .header-item {
     display: flex;
@@ -62,23 +52,17 @@
     z-index: 2;
 }
 
-.etapas-card-hover-image {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    background: rgba(0, 0, 0, 0.16);
-    z-index: 1;
+.etapas-card-image {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px 20px;
 }
 
-.etapas-card-hover-image img {
-    max-width: 220px;
+.etapas-card-image img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .content-item {

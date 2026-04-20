@@ -1,9 +1,9 @@
-const Montaje = () => {
+const Productos = () => {
     return (
         <div>
-            <h1>Montaje</h1>
+            <h1>Productos</h1>
         </div>
     );
 };
 
-export default Montaje;
+export default Productos;
