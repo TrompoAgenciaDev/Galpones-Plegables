@@ -8,10 +8,10 @@ const Hero = ({titulo1, titulo2, subtitulo, location="home"}) => {
     return (
         <>
             <section className="full-container hero-container"
-            style={location === 'contacto' ? {background: `url(${base}assets/hero/hero-contacto.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat"} : null}
+            style={location === 'contacto' ? {background: `url(${base}assets/hero/hero-contacto.webp)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat"} : null}
             >
                 {
-                    location === 'home' ? (
+                    location !== 'contacto' ? (
                         <video
                             autoPlay
                             muted

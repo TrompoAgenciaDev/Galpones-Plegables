@@ -42,25 +42,25 @@ const etapasCards = [
         title: "Relevamiento",
         number: "01",
         text: "Analizamos el sitio, las condiciones del terreno y las necesidades operativas para definir la solución adecuada.",
-        image: "1.png",
+        image: "1.webp",
     },
     {
         title: "Propuesta",
         number: "02",
         text: "Diseñamos la configuración del galpón modular y presentamos la propuesta técnica según el uso requerido.",
-        image: "2.png",
+        image: "2.webp",
     },
     {
         title: "Montaje",
         number: "03",
         text: "Transportamos los módulos plegados y desplegamos la estructura directamente en planta sin necesidad de obra civil.",
-        image: "3.png",
+        image: "3.webp",
     },
     {
         title: "Operación",
         number: "04",
         text: "El galpón queda operativo en pocos días, permitiendo ampliar capacidad de almacenamiento, producción o logística.",
-        image: "4.png",
+        image: "4.webp",
     },
 ];
 
@@ -69,7 +69,7 @@ const Etapas = () => {
 
     return (
         <section className="full-container bg-gray-light etapas-container"
-            style={{background: `url(${base}assets/img/stages-bg.png)`, backgroundSize: "cover", backgroundPosition: "top center", backgroundRepeat: "no-repeat"}}
+            style={{background: `url(${base}assets/img/stages-bg.webp)`, backgroundSize: "cover", backgroundPosition: "top center", backgroundRepeat: "no-repeat"}}
         >
             <div className="container etapas-grid">
                 <div className="etapas-item">
@@ -112,6 +112,7 @@ const Etapas = () => {
                             >
                                 <img 
                                     src={`${base}assets/img/etapas/${item.image}`} 
+                                    loading="lazy"
                                     alt={item.title} 
                                 />
                             </motion.div>

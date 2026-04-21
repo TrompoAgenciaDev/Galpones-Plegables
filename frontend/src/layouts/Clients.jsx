@@ -23,7 +23,7 @@ const Clients = () => {
                     <div className="slider-track">
                         {[...clients, ...clients].map((client, i) => (
                             <div className="slide-item" key={i}>
-                                <img src={`${base}assets/img/clients/${client}?v=2`} alt={`Client Logo`} />
+                                <img src={`${base}assets/img/clients/${client}?v=2`} loading="lazy" alt={`Client Logo`} />
                             </div>
                         ))}
                     </div>

@@ -34,7 +34,7 @@ const Servicios = () => {
     return (
         <>
             <section className="full-container full-img-container">
-                <img className="about-render" src={`${import.meta.env.BASE_URL}assets/img/galpon.png`} alt="Galpones Plegables" />
+                <img className="about-render" src={`${import.meta.env.BASE_URL}assets/img/galpon.webp`} loading="lazy" alt="Galpones Plegables" />
             </section>
             <section className="full-container bg-white services-section">
                 <div className="container grid-services">
@@ -53,25 +53,25 @@ const Servicios = () => {
                                 <strong>La plegabilidad de nuestras estructuras permite una reducción significativa del volumen, optimizando el transporte y el almacenamiento.</strong><br/><br/>
                                 Además, facilita la logística al reducir costos operativos y tiempos de traslado, permitiendo desplegar y replegar los galpones de forma eficiente sin comprometer su integridad estructural ni funcionalidad.
                             </>
-                        ), img: "plegabilidad.png" },
+                        ), img: "plegabilidad.webp" },
                         { title: "Modularidad", text: (
                             <>
                                 <strong>El sistema modular permite configurar las estructuras según las necesidades específicas de cada operación, ajustando dimensiones y capacidad de forma flexible.</strong><br/><br/>
                                 Esto facilita la adaptación a distintos usos y etapas del proyecto, acompañando el crecimiento operativo sin requerir modificaciones complejas.
                             </>
-                        ), img: "modularidad.png" },
+                        ), img: "modularidad.webp" },
                         { title: "Portabilidad", text: (
                             <>
                                 <strong>Las estructuras están diseñadas para ser trasladadas de manera práctica, sin necesidad de desmontajes completos.</strong><br/><br/>
                                 Esto permite reubicar los galpones rápidamente, asegurando continuidad operativa en entornos dinámicos y cambiantes.
                             </>
-                        ), img: "portabilidad.png" },
+                        ), img: "portabilidad.webp" },
                         { title: "Velocidad", text: (
                             <>
                                 <strong>El sistema permite una instalación ágil, alcanzando hasta 250 m² por día según las condiciones del proyecto.</strong><br/><br/>
                                 Esto reduce significativamente los tiempos de puesta en marcha, permitiendo contar con espacios operativos en pocos días.
                             </>
-                        ), img: "velocidad.png" }
+                        ), img: "velocidad.webp" }
                             ].map((item, index) => {
                                 const isOpen = activeIndex === index;
 

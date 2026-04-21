@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="full-container footer-top">
                 <div
                     className="full-container footer-bg"
-                    style={{ backgroundImage: `url(${base}assets/img/footer.png)` }}
+                    style={{ backgroundImage: `url(${base}assets/img/footer.webp)` }}
                 >
                 </div>
                 <div className="full-container desktop">
@@ -27,16 +27,16 @@ const Footer = () => {
                     </h4>
                     <div className="container">
                         <form className="footer-form">
-                            <input type="text" id="newsletter-nombre" name="nombre" placeholder="Nombre" required />
-                            <input type="text" id="newsletter-apellido" name="apellido" placeholder="Apellido" required />
-                            <input type="email" id="newsletter-email" name="email" placeholder="E-mail" required />
-                            <button type="submit" className="btn btn-white">Suscribirme</button>
+                            <input type="text" id="newsletter-nombre" aria-label="Nombre" name="nombre" placeholder="Nombre" required />
+                            <input type="text" id="newsletter-apellido" aria-label="Apellido" name="apellido" placeholder="Apellido" required />
+                            <input type="email" id="newsletter-email" aria-label="Email" name="email" placeholder="E-mail" required />
+                            <button type="submit" className="btn btn-white" aria-label="Suscribirme al newsletter">Suscribirme</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div className="full-container footer-mid"
-                style={{ backgroundImage: `url(${base}assets/img/form/form-bg.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+                style={{ backgroundImage: `url(${base}assets/img/form/form-bg.webp)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                 <div className="full-container position">
                     <div className="container">
 
@@ -110,7 +110,7 @@ const Footer = () => {
                 >
                     <form className="footer-form copy-form">
                         <h4 className='text-white'>Solicitar información</h4>
-                        <input type="email" id="info-email" name="email" placeholder="E-mail" required />
+                        <input type="email" id="info-email" aria-label="Email de contacto" name="email" placeholder="E-mail" required />
                     </form>
                 </motion.div>
                 <div className="full-container desktop"></div>

@@ -42,6 +42,48 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Accesibilidad */
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--text-primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    z-index: 1000001;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* No sacar outline global; mejoramos foco para teclado */
+:focus-visible {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* Respetar "reduced motion" para animaciones/transiciones */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 h1,
 h2,
 h3,

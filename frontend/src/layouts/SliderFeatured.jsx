@@ -16,23 +16,23 @@ const SliderFeatured = () => {
     const items = [
         {
             title: "Industria y manufactura",
-            image: "industria.png",
-            imageBlue: "industria-azul.png"
+            image: "industria.webp",
+            imageBlue: "industria-azul.webp"
         },
         {
             title: "Logística",
-            image: "logistica.png",
-            imageBlue: "logistica-azul.png"
+            image: "logistica.webp",
+            imageBlue: "logistica-azul.webp"
         },
         {
             title: "Minería y energía",
-            image: "mineria.png",
-            imageBlue: "mineria-azul.png"
+            image: "mineria.webp",
+            imageBlue: "mineria-azul.webp"
         },
         {
             title: "Eventos y feria industrial",
-            image: "eventos.png",
-            imageBlue: "eventos-azul.png"
+            image: "eventos.webp",
+            imageBlue: "eventos-azul.webp"
         }
     ];
 

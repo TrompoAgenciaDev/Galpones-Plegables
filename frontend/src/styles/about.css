@@ -5,7 +5,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 0;
+    padding: 50px 0;
     gap: 50px;
 }
 
@@ -39,11 +39,11 @@
 }
 
 
-.grid-about-home:last-child{
+.grid-about-home:last-child {
     position: relative;
 }
 
-.grid-about-home:last-child .grid-item-about{
+.grid-about-home:last-child .grid-item-about {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -52,20 +52,12 @@
     gap: 16px;
 }
 
-.grid-item-about .about-render{
+.grid-item-about .about-render {
     width: 100%;
     max-width: 600px;
 }
 
-.grid-about-home:nth-child(2) .grid-item-about{
-    padding-right: 100px;
-}
-
-.grid-about-home:last-child .grid-item-about{
-    padding-bottom: 40px;
-}
-
-.about-icon{    
+.about-icon {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -77,20 +69,45 @@
     margin-top: 50px;
 }
 
-.about-icon svg{
+.about-icon svg {
     width: 30px;
     height: 30px;
 }
 
-.about-icon p{
+.about-icon p {
     color: var(--primary-color);
     font-weight: bold;
+}
+
+.grid-about {
+    display: grid;
+}
+
+.grid-item-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.grid-about-2 .middle-about-text {
+    width: 100%;
+    max-width: 700px;
+    color: var(--text-primary-color);
+}
+
+.grid-about .about-text {
+    width: 100%;
+    max-width: 600px;
+    font-size: 20px;
 }
 
 @media (min-width: 1024px) {
 
     .full-container.about-container {
         gap: 120px;
+        padding: 0;
     }
 
     .about-container .grid-about-home:first-child .grid-item-about:first-child {
@@ -104,7 +121,7 @@
     }
 
     .grid-about-home:first-child .grid-item-about:nth-child(2),
-    .grid-about-home:first-child .grid-item-about:last-child{
+    .grid-about-home:first-child .grid-item-about:last-child {
         padding: 120px 0 0;
     }
 
@@ -122,13 +139,18 @@
         padding: 0 0 40px;
     }
 
-    .about-text{
+    .about-text {
         width: 460px;
         font-size: 32px;
     }
 
-    .grid-about-home:last-child .grid-item-about{
+    .grid-about-home:last-child .grid-item-about {
         padding-bottom: 50px;
+    }
+
+    .grid-about {
+        gap: 50px;        
+        grid-template-columns: 62fr 17fr;
     }
 }
 
@@ -142,20 +164,68 @@
         font-size: 22px;
     }
 
-    .about-render{
+    .about-render {
         width: 100%;
         height: auto;
     }
 
-    .about-text{
+    .about-text {
         font-size: 35px;
     }
 
-    .about-icon{
+    .about-icon {
         margin-top: 70px;
     }
 
-    .about-icon p{
+    .about-icon p {
         font-size: 18px;
+    }
+
+    .grid-about {
+        height: 400px;
+        grid-template-columns: 191fr 48fr;
+    }
+}
+
+/* Slider Nosotros - Background Image */
+.slider-nosotros-single {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slider-nosotros-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .slider-nosotros-single {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slider-nosotros-single {
+        height: 600px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .slider-nosotros-single {
+        height: 800px;
+    }
+}
+
+@media (min-width: 1440px){
+    .grid-about {
+        height: 400px;
+        grid-template-columns: 62fr 17fr;
     }
 }
