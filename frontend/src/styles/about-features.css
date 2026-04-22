@@ -1,0 +1,93 @@
+.full-container.about-features {
+    padding: 0;
+}
+
+.about-features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--text-primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0;
+}
+
+.about-feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-left: 1px solid var(--primary-color);
+    border-right: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    -webkit-transition: background-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out;
+}
+
+.about-feature-card.active {
+    background-color: var(--primary-color);
+}
+
+.about-feature-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-feature-title h5 {
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 24px;
+    -webkit-transition: color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out;
+}
+
+.about-feature-card.active .about-feature-title h5 {
+    color: var(--text-primary-color);
+}
+
+.about-feature-text {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.about-feature-text .upper-text {
+    color: var(--text-primary-color);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.35;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    .about-features-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: start;
+    }
+
+    .about-feature-card {
+        border: none;
+        min-height: 220px;
+    }
+
+    .about-feature-card:not(:last-child) {
+        border-right: 1px solid var(--primary-color);
+    }
+
+    .about-feature-title h5 {
+        font-size: 30px;
+    }
+
+    .about-feature-text .upper-text {
+        max-width: 220px;
+    }
+}
+

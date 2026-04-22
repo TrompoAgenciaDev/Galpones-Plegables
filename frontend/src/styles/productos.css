@@ -1,0 +1,38 @@
+.productos-container-info{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px 0;
+}
+
+.grid-productos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 1280px){
+    .productos-container-info{
+        padding: 100px 0;
+    }
+    
+    .grid-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .productos-container-info{
+        gap: 150px;
+    }
+
+    .subtitle-text-productos{
+        max-width: 800px;
+        font-size: 30px;
+    }
+
+    .grid-producto-item p{
+        max-width: 390px;
+        font-size: 18px;
+    }
+}

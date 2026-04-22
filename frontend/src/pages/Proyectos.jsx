@@ -1,8 +1,17 @@
+import Hero from '../layouts/Hero';
+import Recientes from '../layouts/Recientes';
+
 const Proyectos = () => {
     return (
-        <div>
-            <h1>Proyectos</h1>
-        </div>
+        <>
+            <Hero
+                titulo2='Nuestros proyectos'
+                location='proyectos'
+            />
+            <Recientes
+                titulo='Proyectos'
+            />
+        </>
     );
 };
 

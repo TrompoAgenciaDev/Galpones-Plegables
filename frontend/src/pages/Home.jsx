@@ -18,7 +18,9 @@ const Home = () => {
       <About />
       <Servicios />
       <Etapas />
-      <Recientes />
+      <Recientes
+        titulo='Proyectos recientes'
+      />
       <SliderFeatured/>
       <Clients/>
     </>

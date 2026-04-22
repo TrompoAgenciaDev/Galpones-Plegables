@@ -2,6 +2,7 @@ import Hero from "@/layouts/Hero";
 import About from "@/layouts/About";
 import Clients from "@/layouts/Clients";
 import SliderNosotros from "@/layouts/SliderNosotros";
+import AboutFeatures from "@/layouts/AboutFeatures";
 
 const Nosotros = () => {
     return (
@@ -12,6 +13,7 @@ const Nosotros = () => {
             />
             <About location="nosotros" />            
             <SliderNosotros />
+            <AboutFeatures/>
             <Clients />
         </>
     );
