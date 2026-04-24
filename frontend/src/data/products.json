@@ -4,8 +4,8 @@
     "name": "G_7.3",
     "short_description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento",
     "description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento. Su diseño plegable y metálico permite el transporte compacto, el despliegue en obra sin requerimientos de fundación permanente y la reubicación posterior, lo que lo convierte en una solución versátil y funcional ante necesidades de espacio inmediato.",
-    "featured_image_1": "assets/img/products/plegable-7-3/plegable 7-3-azul.png",
-    "featured_image_2": "assets/img/products/plegable-7-3/plegable 7-3-azul.png",
+    "featured_image_1": "assets/img/products/plegable-7-3/7-3-1.png",
+    "featured_image_2": "assets/img/products/render.png",
     "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/10/Ficha-tecnica-Galpon-Plegable-7.3.pdf",
     "attributes": {
       "frente": "7 metros",
@@ -21,16 +21,16 @@
         "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "modularidad": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Modularidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "anclajes": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Anclajes", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "hormigon": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Hormigon", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "tierra_nivelada": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Tierra Nivelada", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ]
     }
   },
@@ -39,8 +39,9 @@
     "name": "G_11.4",
     "short_description": "Estructura metálica modular de gran porte, ideal para almacenamiento industrial o logístico de alto volumen. Altura útil de 4 metros y frente de 11 metros.",
     "description": "El Galpón Plegable 11.4 está concebido como una solución estructural adaptable para operaciones industriales que requieren superficies cubiertas de gran volumen. Su diseño se basa en un sistema modular metálico compuesto por pórticos articulados, lo que permite el transporte en formato plegado, el montaje sin intervención en el terreno y la reutilización en distintos emplazamientos.",
-    "featured_image_1": "assets/img/products/plegable-11-4/plegable 11-4 azlu.png",
-    "featured_image_2": "assets/img/products/plegable-11-4/plegable 11-4.png",
+    "featured_image_1": "assets/img/products/plegable-11-4/11-4-1.png",
+    "featured_image_2": "assets/img/products/render.png",
+    "vertical_image": "assets/img/products/vertical-product.png",
     "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/04/GP-Ficha-tecnica-11.4.pdf",
     "attributes": {
       "frente": "11 metros",
@@ -56,16 +57,16 @@
         "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "modularidad": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Modularidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "anclajes": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Anclajes", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "hormigon": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Hormigon", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ],
       "tierra_nivelada": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Tierra Nivelada", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
       ]
     }
   }

@@ -1,5 +1,6 @@
 import Hero from '@/layouts/Hero';
-import '../styles/productos.css'
+import '../styles/productos.css';
+import ProductLoop from '@/layouts/ProductLoop';
 
 const Modelos = () => {
 
@@ -20,7 +21,7 @@ const Modelos = () => {
                 </div>
                 <div className="container grid-productos">
                     <div className="grid-producto-item">
-                        <img src="../../assets/img/about.gif" alt="" />
+                        <img src={`${base}assets/img/about.gif`} alt="" />
                     </div>
                     <div className="grid-producto-item left-border-blue">
                         <p>
