@@ -2,6 +2,11 @@ import Hero from '@/layouts/Hero';
 import '../styles/productos.css'
 
 const Modelos = () => {
+
+    const base = import.meta.env.BASE_URL?.endsWith("/")
+        ? import.meta.env.BASE_URL
+        : `${import.meta.env.BASE_URL}/`;
+
     return (
         <>
             <Hero
@@ -17,14 +22,19 @@ const Modelos = () => {
                     <div className="grid-producto-item">
                         <img src="../../assets/img/about.gif" alt="" />
                     </div>
-                    <div className="grid-producto-item">
+                    <div className="grid-producto-item left-border-blue">
                         <p>
                             Cada uno puede ampliarse por módulos, adaptando las dimensiones finales a las necesidades específicas del proyecto.
                         </p>
                     </div>
                 </div>
             </div>
+
+            <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
+
+            <ProductLoop />
         </>
+
     );
 };
 

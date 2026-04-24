@@ -65,9 +65,11 @@ const About = ({ location = 'home' }) => {
                 <div className="grid-item-about left-border">
                     <img className="about-logo" src={`${import.meta.env.BASE_URL}assets/img/clients/comar-logo.png`} loading="lazy" alt="Comar Construcciones" />
                 </div>
-                <div className="img-container">
-                    <img className="about-logo-footer" src={`${import.meta.env.BASE_URL}assets/img/inpi.png`} loading="lazy" alt="Instituto Nacional de la Propiedad Industrial" />
-                    <p>Protegido mediante Modelo Industrial, registrado ante el Instituto Nacional de la Propiedad Industrial.</p>
+                <div className="img-container left-border">
+                    <div className="content-img-wrapper">
+                        <img className="about-logo-footer" src={`${import.meta.env.BASE_URL}assets/img/inpi.png`} loading="lazy" alt="Instituto Nacional de la Propiedad Industrial" />
+                        <p className="text-white">Protegido mediante Modelo Industrial, registrado ante el Instituto Nacional de la Propiedad Industrial.</p>
+                    </div>
                 </div>
             </div>
         </section>

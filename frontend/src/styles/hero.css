@@ -26,7 +26,8 @@
 }
 
 .right-border,
-.left-border {
+.left-border,
+.left-border-blue {
     position: relative;
 }
 
@@ -115,19 +116,28 @@
     }
 
     .left-border::before,
-    .right-border::before {
+    .right-border::before,
+    .left-border-blue::before {
         content: "";
         width: 1px;
         position: absolute;
-        background-color: var(--text-primary-color);
         transform: scaleY(var(--border-grow, 1)) !important;
     }
 
-    .left-border::before {
+    .left-border::before,
+    .left-border-blue::before {
         height: 100%;
         left: -50px;
         top: 0px;
         transform-origin: top;
+    }
+
+    .left-border::before{
+        background-color: var(--text-primary-color);
+    }
+
+    .left-border-blue::before{
+        background-color: var(--primary-color);
     }
 
     .right-border::before {
@@ -135,6 +145,7 @@
         right: -50px;
         bottom: 0px;
         transform-origin: bottom;
+        background-color: var(--text-primary-color);
     }
 
     .title-hero h1 {

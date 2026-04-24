@@ -103,6 +103,14 @@
     font-size: 20px;
 }
 
+.img-container{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 @media (min-width: 1024px) {
 
     .full-container.about-container {
@@ -151,6 +159,12 @@
     .grid-about {
         gap: 50px;        
         grid-template-columns: 62fr 17fr;
+    }
+
+    .img-container .content-img-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 

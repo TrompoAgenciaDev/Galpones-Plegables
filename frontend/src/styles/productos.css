@@ -6,24 +6,30 @@
 }
 
 .grid-productos{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
+.grid-producto-item{
+    height: 100%;
+}
+
+.productos-banner{
+    height: 400px;
+}
+
 @media (min-width: 1280px){
     .productos-container-info{
-        padding: 100px 0;
+        padding: 70px 0;
+        gap: 80px;
     }
     
     .grid-productos{
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-
-    .productos-container-info{
-        gap: 150px;
+        gap: 100px;
     }
 
     .subtitle-text-productos{
@@ -34,5 +40,9 @@
     .grid-producto-item p{
         max-width: 390px;
         font-size: 18px;
+    }
+
+    .productos-banner{
+        height: 550px;
     }
 }
