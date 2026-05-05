@@ -4,7 +4,7 @@ import routesConfig from '@/config/routesConfig';
 import Layout from '@/layouts/Layout';
 
 const AppRoutes = () => {
-  const allRoutes = Object.values(routesConfig).flat();
+  const allRoutes = Object.values(routesConfig).flat().filter((r) => r.component);
 
   return (
     <Suspense fallback={<div style={{ padding: '20px', textAlign: 'center' }}>Cargando...</div>}>

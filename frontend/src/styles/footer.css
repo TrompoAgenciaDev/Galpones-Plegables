@@ -320,7 +320,7 @@ footer .menu-list {
     }
 
     .footer-bottom .full-container:nth-child(3)::before {
-        height: 1163px;
+        height: 1070px;
         left: -4px;
         bottom: 50px;
     }
@@ -367,12 +367,12 @@ footer .menu-list {
     }    
 
     .copy-container .full-container:nth-child(2)::before {
-        height: 1600px;
+        height: 1520px;
         left: -5px;
     }
 
     .footer-bottom .full-container:nth-child(3)::before {
-        height: 1300px;
+        height: 1280px;
         left: -4px;
         bottom: 50px;
     }

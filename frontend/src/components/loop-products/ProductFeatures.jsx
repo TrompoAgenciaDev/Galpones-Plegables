@@ -66,7 +66,7 @@ const ProductFeatures = ({ features }) => {
                                 initial={false}
                                 animate={{
                                     borderLeftColor: isOpen ? "var(--terciary-color)" : "transparent",
-                                    paddingLeft: isOpen ? "50px" : "0px",
+                                    paddingLeft: isOpen ? "30px" : "0px",
                                 }}
                                 transition={{ duration: 0.5, ease: "easeOut" }}
                             >

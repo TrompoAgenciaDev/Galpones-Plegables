@@ -3,34 +3,47 @@
     "id": 1,
     "name": "G_7.3",
     "short_description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento",
-    "description": "El Galpón Plegable 7.3 es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento. Su diseño plegable y metálico permite el transporte compacto, el despliegue en obra sin requerimientos de fundación permanente y la reubicación posterior, lo que lo convierte en una solución versátil y funcional ante necesidades de espacio inmediato.",
+    "description": "<span>El </span><b>Galpón Plegable 7.3</b><span> es una estructura modular de tipo nave industrial liviana, diseñada para aplicaciones temporales o semipermanentes en entornos industriales, logísticos o de almacenamiento. Su diseño plegable y metálico permite el transporte compacto, el despliegue en obra sin requerimientos de fundación permanente y la reubicación posterior, lo que lo convierte en una solución versátil y funcional ante necesidades de espacio inmediato.</span><br/><br/><span>La unidad está conformada por pórticos metálicos articulados y módulos repetibles que permiten escalar su longitud según la necesidad. En particular para este modelo se provee en </span><b>módulos de 2,3 metros de profundidad</b><span>, cada uno con una </span><b>superficie cubierta de 15 m²</b><span>. El sistema puede complementarse con cerramientos opcionales laterales y frontales, así como portones, puertas, de acuerdo con el uso previsto.</span><br/><br/><span>El producto está optimizado para un montaje rápido sobre superficie nivelada, ya sea de hormigón, suelo compactado u otra base estabilizada, sin necesidad de fijaciones invasivas. Su uso está orientado a aplicaciones como almacenamiento de insumos, zonas de carga y descarga, refugio temporal de maquinaria o ampliación de áreas operativas en plantas industriales.</span>",
     "featured_image_1": "assets/img/products/plegable-7-3/7-3-1.png",
     "featured_image_2": "assets/img/products/render.png",
     "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/10/Ficha-tecnica-Galpon-Plegable-7.3.pdf",
     "attributes": {
-      "frente": "7 metros",
-      "altura": "3 metros",
-      "profundidad": "2,3 metros",
-      "superficie": "15 m²",
+      "frente": "6,92m",
+      "altura utilizable": "3.26m",
+      "altura maxima": "3,85m",
+      "profundidad": "2,3m",
+      "superficie": "15,98m²",
       "estructura": "Acero galvanizado",
       "cubierta": "Chapa trapezoidal galvanizada o paneles",
-      "cerramientos": "Chapa trapezoidal galvanizada o paneles"
+      "cerramientos": "Chapa trapezoidal galvanizada o paneles",
+      "tiempo de instalacion": "1 a 3 días",
+      "tipo de uso": "Temporario"
     },
     "features": {
       "plegable": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Plegabilidad",
+        "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>",
+        "assets/img/products/plegabilidad.png"
       ],
       "modularidad": [
-        "Modularidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Modularidad",
+        "<p className='upper-text'>Las estructuras de desarrollan a partir de un sistema modular<p/><p>Lo que permite adaptar las diensiones finales según las necesidades de cada proyecto<p/>",
+        "assets/img/products/modularidad.png"
       ],
       "anclajes": [
-        "Anclajes", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Anclajes",
+        "<p className='upper-text'>Los anclajes forman parte del sistema estructural permitiendo vincular la estructura con el suelo de manera segura y controlada<p/><p>El sistema contempla soluciones específicas para superficies de hormigón y para tierra nivelada<p/>",
+        "assets/img/products/anclajes.png"
       ],
       "hormigon": [
-        "Hormigon", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Hormigon",
+        "<p className='upper-text'>Fijación de anclajes metálicos al hormigón<p/><p>Mediante resinas de alto desempeño, garantizando una unión firme y estable<p/>",
+        "assets/img/products/hormigon.png"
       ],
-      "tierra_nivelada": [
-        "Tierra Nivelada", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+      "tierra nivelada": [
+        "Tierra Nivelada",
+        "<p className='upper-text'>Fijación de la estructura al terreno mediante varillas de anclaje hincadas<p/><p>Asegurando una correcta sujeción y estabilidad del conjunto.<p/>",
+        "assets/img/products/tierra-nivelada.png"
       ]
     }
   },
@@ -38,35 +51,48 @@
     "id": 2,
     "name": "G_11.4",
     "short_description": "Estructura metálica modular de gran porte, ideal para almacenamiento industrial o logístico de alto volumen. Altura útil de 4 metros y frente de 11 metros.",
-    "description": "El Galpón Plegable 11.4 está concebido como una solución estructural adaptable para operaciones industriales que requieren superficies cubiertas de gran volumen. Su diseño se basa en un sistema modular metálico compuesto por pórticos articulados, lo que permite el transporte en formato plegado, el montaje sin intervención en el terreno y la reutilización en distintos emplazamientos.",
+    "description": "<span>El </span><b>Galpón Plegable 11.4</b><span> está concebido como una solución estructural adaptable para operaciones industriales que requieren superficies cubiertas de gran volumen. Su diseño se basa en un sistema modular metálico compuesto por pórticos articulados, lo que permite el transporte en formato plegado, el montaje sin intervención en el terreno y la reutilización en distintos emplazamientos.</span><br/><br/><span>Este modelo posee una configuración de </span><b>11 metros de ancho libre y 4 metros de altura útil</b><span>, siendo adecuado para almacenamiento de insumos, zonas de protección de maquinaria, tareas logísticas o ampliaciones funcionales en plantas activas. La profundidad se incrementa mediante </span><b>módulos de 2,3 metros</b><span>, cada uno con una </span><b>superficie cubierta aproximada de 25 m²</b><span>, lo que posibilita una extensión flexible de acuerdo con la necesidad operativa.</span><br/><br/><span>El montaje puede realizarse sobre superficies consolidadas como hormigón o suelo estabilizado, sin necesidad de anclajes invasivos. Asimismo, puede equiparse con cerramientos laterales y frontales, portones, puertas o ventanas, configurando distintas versiones según el destino de uso.</span><br/><br/><span>El Plegable 11.4 responde particularmente bien ante requerimientos de espacio temporal o semipermanente en entornos que demandan estructuras funcionales, resistentes y eficientes en términos de tiempo y logística de implementación.</span>",
     "featured_image_1": "assets/img/products/plegable-11-4/11-4-1.png",
     "featured_image_2": "assets/img/products/render.png",
     "vertical_image": "assets/img/products/vertical-product.png",
     "pdf_url": "https://galponesplegables.com/wp-content/uploads/2025/04/GP-Ficha-tecnica-11.4.pdf",
     "attributes": {
-      "frente": "11 metros",
-      "altura": "4 metros",
-      "profundidad": "2,3 metros",
-      "superficie": "25 m²",
+      "frente": "11,53m",
+      "altura utilizable": "4m",
+      "altura maxima": "5m",
+      "profundidad": "2,3m",
+      "superficie": "26,6m²",
       "estructura": "Acero galvanizado",
       "cubierta": "Chapa trapezoidal galvanizada o paneles",
-      "cerramientos": "Chapa trapezoidal galvanizada o paneles"
+      "cerramientos": "Chapa trapezoidal galvanizada o paneles",
+      "tiempo de instalacion": "2 a 4 días",
+      "tipo de uso": "Temporario"
     },
     "features": {
       "plegable": [
-        "Plegabilidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Plegabilidad",
+        "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>",
+        "assets/img/products/plegabilidad.png"
       ],
       "modularidad": [
-        "Modularidad", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Modularidad",
+        "<p className='upper-text'>Las estructuras de desarrollan a partir de un sistema modular<p/><p>Lo que permite adaptar las diensiones finales según las necesidades de cada proyecto<p/>",
+        "assets/img/products/modularidad.png"
       ],
       "anclajes": [
-        "Anclajes", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Anclajes",
+        "<p className='upper-text'>Los anclajes forman parte del sistema estructural permitiendo vincular la estructura con el suelo de manera segura y controlada<p/><p>El sistema contempla soluciones específicas para superficies de hormigón y para tierra nivelada<p/>",
+        "assets/img/products/anclajes.png"
       ],
       "hormigon": [
-        "Hormigon", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+        "Hormigon",
+        "<p className='upper-text'>Fijación de anclajes metálicos al hormigón<p/><p>Mediante resinas de alto desempeño, garantizando una unión firme y estable<p/>",
+        "assets/img/products/hormigon.png"
       ],
-      "tierra_nivelada": [
-        "Tierra Nivelada", "<p className='upper-text'>Una bisagra estructural articula los planos de la cubierta, permitiendo el plegado y desplegado controlado del sistema.<p/><p>La reducción de volumen en estado plegado optimiza el transporte y permite almacenar la estructura sin ocupar espacio significativo en planta.<p/>" , "assets/img/products/plegable-7-3/plegable-7-3.png"
+      "tierra nivelada": [
+        "Tierra Nivelada",
+        "<p className='upper-text'>Fijación de la estructura al terreno mediante varillas de anclaje hincadas<p/><p>Asegurando una correcta sujeción y estabilidad del conjunto.<p/>",
+        "assets/img/products/tierra-nivelada.png"
       ]
     }
   }

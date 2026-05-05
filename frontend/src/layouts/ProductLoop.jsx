@@ -1,6 +1,5 @@
 import { useState } from "react";
 import productsData from "../data/products.json";
-import ProductFeatures from "../components/loop-products/ProductFeatures";
 import '../styles/product-loop.css'
 
 const formatKey = (key) => {
@@ -27,11 +26,14 @@ const ProductLoop = () => {
     return (
         <>
             <div className="full-container product-loop-wrapper">
-                <div className="container">
+                <div className="container product-loop-header">
                     <h2>Modelos</h2>
+                    <p className="upper-text">
+                        La línea de productos se organiza en dos modelos de distinta escala, ambos basados en el mismo sistema plegable y modular.
+                    </p>
                 </div>
                 <div className="container">
-                    <div className="header-product" style={{ display: "flex", gap: "30px", borderBottom: "1px solid var(--terciary-color)", paddingBottom: "10px", marginBottom: "30px" }}>
+                    <div className="header-product" style={{ display: "flex", gap: "30px", borderBottom: "1px solid var(--terciary-color)", borderTop: "1px solid var(--terciary-color)", padding: "20px 0", marginBottom: "30px" }}>
                         {productsData.map((p, idx) => (
                             <h4
                                 key={p.id}
@@ -77,15 +79,9 @@ const ProductLoop = () => {
                         </div>
                     </div>
 
-                    <div className="footer-product">
-                        <h3 className="service-section-title" style={{ marginTop: "50px", marginBottom: "30px" }}>Características</h3>
-                        <div className="container grid-features">
-                            <div className="feature-img-wrapper"
-                                style={{ backgroundImage: `url(${base}assets/img/products/vertical-product.png)`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat' }}
-                            ></div>
-                            <ProductFeatures key={product.id} features={product.features} />
-                        </div>
-                    </div>
+                    <div className="full-container"
+                        style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat' }}
+                    ></div>
                 </div>
             </div>
         </>

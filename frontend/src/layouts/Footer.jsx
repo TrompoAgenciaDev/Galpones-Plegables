@@ -7,7 +7,7 @@ const Footer = () => {
     const base = import.meta.env.BASE_URL;
     return (
         <footer className="bg-blue">
-
+            {/*
             <div className="full-container footer-top">
                 <div
                     className="full-container footer-bg"
@@ -34,7 +34,7 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="full-container footer-mid"
                 style={{ backgroundImage: `url(${base}assets/img/form/form-bg.webp)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                 <div className="full-container position">

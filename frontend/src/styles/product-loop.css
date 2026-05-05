@@ -1,4 +1,4 @@
-.product-loop-wrapper{
+.product-loop-wrapper {
     padding: 50px 0;
 }
 
@@ -31,7 +31,6 @@ table tr:nth-child(even) {
 table td {
     font-size: 16px;
     color: #0b3a9b;
-    /* azul */
 }
 
 table td:first-child {
@@ -54,18 +53,39 @@ table td:last-child {
     min-height: 300px;
 }
 
+.product-loop-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 @media (min-width: 1024px) {
     .grid-content-product {
         grid-template-columns: 2fr 3fr;
         gap: 150px;
     }
 
-    .grid-features{
+    .grid-features {
         grid-template-columns: 1fr 3fr;
         align-items: stretch;
     }
 
     .feature-img-wrapper {
         min-height: 100%;
+    }
+
+    .product-loop-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .product-loop-header p {
+        max-width: 650px;
+        padding: 70px 0 20px;
+        font-size: 20px;
     }
 }
