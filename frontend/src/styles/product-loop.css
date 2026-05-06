@@ -20,13 +20,6 @@ table tr {
     padding: 5px 18px;
 }
 
-table tr:nth-child(odd) {
-    background-color: #EE4B0026;
-}
-
-table tr:nth-child(even) {
-    background-color: transparent;
-}
 
 table td {
     font-size: 16px;

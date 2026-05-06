@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 360px;
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 2px solid var(--terciary-color);
 }
 
 .montaje-step:last-child {
@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-top: 2px solid var(--terciary-color);
 }
 
 .montaje-step__number {

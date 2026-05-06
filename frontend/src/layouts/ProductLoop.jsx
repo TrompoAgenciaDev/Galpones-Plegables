@@ -19,6 +19,9 @@ const ProductLoop = () => {
     const [activeProductIndex, setActiveProductIndex] = useState(0);
     const product = productsData[activeProductIndex];
 
+    const isBlueProduct = activeProductIndex % 2 === 0;
+    const rowOddBg = isBlueProduct ? "#F4F4F4" : "rgba(238, 75, 0, 0.15)";
+
     const base = import.meta.env.BASE_URL?.endsWith("/")
         ? import.meta.env.BASE_URL
         : `${import.meta.env.BASE_URL}/`;
@@ -42,7 +45,9 @@ const ProductLoop = () => {
                                 style={{
                                     cursor: "pointer",
                                     margin: 0,
-                                    color: activeProductIndex === idx ? "var(--terciary-color)" : "#ccc",
+                                    color: activeProductIndex === idx
+                                        ? (idx % 2 === 0 ? "#0b3a9b" : "var(--terciary-color)")
+                                        : "#ccc",
                                     transition: "color 0.3s ease",
                                     fontWeight: "700"
                                 }}
@@ -62,8 +67,8 @@ const ProductLoop = () => {
                                     <div className="featured-body-content">
                                         <table>
                                             <tbody>
-                                                {Object.entries(product.attributes).map(([key, value]) => (
-                                                    <tr key={key}>
+                                                {Object.entries(product.attributes).map(([key, value], rowIdx) => (
+                                                    <tr key={key} style={{ backgroundColor: rowIdx % 2 === 0 ? rowOddBg : "transparent" }}>
                                                         <td>{formatKey(key)}</td>
                                                         <td>{value}</td>
                                                     </tr>

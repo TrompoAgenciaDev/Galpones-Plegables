@@ -73,10 +73,13 @@ const NotasLoop = () => {
                 ))}
             </div>
 
+            {/*
             <div className="container">
                 <button className="btn btn-blue btn-mobile">ver más proyectos</button>
                 <button className="btn btn-blue btn-desktop">ver más proyectos</button>
             </div>
+            */}
+
         </div>
     );
 };
