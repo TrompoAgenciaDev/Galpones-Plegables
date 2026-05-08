@@ -64,7 +64,7 @@ const Montaje = () => {
                 location="montaje"
             />
 
-            <div className="full-container">
+            <div className="full-container montaje-intro">
                 <div className="container">
                     <h2 className="upper-text title-monaje">Del traslado a la operación en pocas etapas, con mínima intervención y máxima optimización de tiempos y costos.</h2>
                 </div>
@@ -79,7 +79,7 @@ const Montaje = () => {
                                     <span className="montaje-step__number">{step.number}</span>
                                     <h3>{step.title}</h3>
                                     <p>{step.desc}</p>
-                                    <p><strong>{step.highlight}</strong></p>
+                                    <p className="upper-text"><strong>{step.highlight}</strong></p>
                                 </div>
                                 <img
                                     className="montaje-step__image"
