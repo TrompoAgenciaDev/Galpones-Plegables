@@ -51,18 +51,23 @@ const AboutFeatures = () => {
     return (
         <section className="full-container slider-featured about-features-slider">
             <div className="full-container img-container about-features-text-container">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={activeIndex}
-                        className="about-features-text-wrapper blue-text"
-                        initial={textContainerMotion.initial}
-                        animate={textContainerMotion.animate}
-                        exit={textContainerMotion.exit}
-                        transition={{ duration: 0.18, ease: "easeOut" }}
-                    >
-                        <p className="upper-text">{items[activeIndex]?.text}</p>
-                    </motion.div>
-                </AnimatePresence>
+                <div className="about-features-row">
+                    <div className="about-features-text-wrapper blue-text">
+                        <h3 className="about-section-title">Valores</h3>
+                    </div>
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeIndex}
+                            className="about-features-text-wrapper blue-text"
+                            initial={textContainerMotion.initial}
+                            animate={textContainerMotion.animate}
+                            exit={textContainerMotion.exit}
+                            transition={{ duration: 0.18, ease: "easeOut" }}
+                        >
+                            <p className="upper-text">{items[activeIndex]?.text}</p>
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
             </div>
 
             <div className="full-container pointer-container">

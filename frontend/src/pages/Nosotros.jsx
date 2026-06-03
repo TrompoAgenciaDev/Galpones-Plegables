@@ -11,9 +11,9 @@ const Nosotros = () => {
                 titulo2="Sobre nosotros"
                 location="nosotros"
             />
-            <About location="nosotros" />            
+            <About location="nosotros" />
             <SliderNosotros />
-            <AboutFeatures/>
+            <AboutFeatures />
             <Clients />
         </>
     );

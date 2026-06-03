@@ -37,14 +37,13 @@ const About = ({ location = 'home' }) => {
                         <>
                             <div className="container grid-about">
                                 <div className="grid-item-about">
+                                    <h5>Misión</h5>
                                     <p className="about-text">
-                                        Galpones Plegables es una unidad del grupo Comar Construcciones especializada en infraestructura metálica modular para la industria.
+                                        Proporcionar soluciones logísticas temporales que sean rápidas, resistentes y versátiles, ayudando a las industrias a optimizar sus operaciones con infraestructura confiable y flexible, contribuyendo a una industria más eficiente y sostenible.
                                     </p>
+                                    <h5>Visión</h5>
                                     <p className="about-text">
-                                        Desarrollamos galpones que se pliegan, transportan e instalan directamente en planta, permitiendo crear espacios operativos en pocos días y sin necesidad de obra civil.
-                                    </p>
-                                    <p className="about-text">
-                                        <strong>Una solución robusta, reubicable y adaptable para operaciones industriales, logísticas y productivas.</strong>
+                                        Ser líderes en el mercado de infraestructura modular temporal, reconocidos por nuestra innovación, calidad y compromiso con la sostenibilidad. Buscamos transformar la manera en que las empresas piensan sus espacios logísticos temporales.
                                     </p>
                                 </div>
                                 <div className="grid-item-about left-border">
@@ -52,9 +51,7 @@ const About = ({ location = 'home' }) => {
                                 </div>
                             </div>
                             <div className="container grid-about-2">
-                                <p className="upper-text middle-about-text">
-                                    Desde el análisis inicial hasta la instalación final, Galpones Plegables acompaña a cada cliente en la definición de la solución más eficiente para ampliar su capacidad operativa.
-                                </p>
+                                
                             </div>
                         </>
                     ) : null

@@ -1,17 +1,76 @@
-import React from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import '../../styles/notas-card.css';
 
 const NotasCard = ({ nota }) => {
     if (!nota) return null;
 
     const base = import.meta.env.BASE_URL;
+    const gallery = nota.gallery || [];
+    const hasGallery = gallery.length > 0;
+
+    const [isHovered, setIsHovered] = useState(false);
+    const [index, setIndex] = useState(0);
+    const timerRef = useRef(null);
+
+    const stopTimer = useCallback(() => {
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+            timerRef.current = null;
+        }
+    }, []);
+
+    const startTimer = useCallback(() => {
+        if (!hasGallery) return;
+        stopTimer();
+        timerRef.current = setInterval(() => {
+            setIndex(i => (i + 1) % gallery.length);
+        }, 2600);
+    }, [gallery.length, hasGallery, stopTimer]);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        setIndex(0);
+        startTimer();
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        setIndex(0);
+        stopTimer();
+    };
+
+    const handlePrev = (e) => {
+        e.stopPropagation();
+        setIndex(i => (i - 1 + gallery.length) % gallery.length);
+        startTimer();
+    };
+
+    const handleNext = (e) => {
+        e.stopPropagation();
+        setIndex(i => (i + 1) % gallery.length);
+        startTimer();
+    };
+
+    const handleDot = (e, i) => {
+        e.stopPropagation();
+        setIndex(i);
+        startTimer();
+    };
+
+    useEffect(() => () => stopTimer(), [stopTimer]);
+
+
 
     return (
-        <article className="nota-card">
+        <article
+            className="nota-card"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <div className="nota-body">
                 <div className="nota-header">
                     <span>{nota.id < 10 ? `0${nota.id}` : nota.id}</span>
-                    <span>{`${nota.galpon}`}</span>
+                    <span>{nota.galpon}</span>
                 </div>
                 <div className="nota-content">
                     <h4 className="nota-name">{nota.name}</h4>
@@ -21,14 +80,43 @@ const NotasCard = ({ nota }) => {
                             src={`${base}${nota.default_image.replace(/^\//, '')}`}
                             alt={nota.name}
                             className="nota-image-main"
+                            style={{ opacity: isHovered && hasGallery ? 0 : 1 }}
                             loading="lazy"
                         />
-                        <img
-                            src={`${base}${nota.hover_image.replace(/^\//, '')}`}
-                            alt={nota.name}
-                            className="nota-image-hover"
-                            loading="lazy"
-                        />
+                        {isHovered && hasGallery && (
+                            <img
+                                key={index}
+                                src={`${base}${gallery[index].replace(/^\//, '')}`}
+                                alt={nota.name}
+                                className="nota-gallery-overlay"
+                                loading="eager"
+                            />
+                        )}
+
+                        {isHovered && hasGallery && (
+                            <>
+                                <button className="nota-gallery-btn nota-gallery-prev" onClick={handlePrev} aria-label="Anterior">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M15 18l-6-6 6-6" />
+                                    </svg>
+                                </button>
+                                <button className="nota-gallery-btn nota-gallery-next" onClick={handleNext} aria-label="Siguiente">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M9 18l6-6-6-6" />
+                                    </svg>
+                                </button>
+                                <div className="nota-gallery-dots">
+                                    {gallery.map((_, i) => (
+                                        <button
+                                            key={i}
+                                            className={`nota-gallery-dot${i === index ? ' active' : ''}`}
+                                            onClick={(e) => handleDot(e, i)}
+                                            aria-label={`Imagen ${i + 1}`}
+                                        />
+                                    ))}
+                                </div>
+                            </>
+                        )}
                     </div>
 
                     <div className="nota-footer">

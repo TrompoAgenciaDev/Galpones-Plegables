@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import "../styles/clients.css";
 
 const Clients = () => {

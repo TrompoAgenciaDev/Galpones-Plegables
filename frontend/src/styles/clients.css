@@ -17,7 +17,6 @@
     overflow: hidden;
 }
 
-/* 100px white fade as per request */
 .inner-gradient {
     position: absolute;
     top: 0;
@@ -48,11 +47,11 @@
 
 @keyframes scroll-clients {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Con 2 copias, -50% nos lleva exactamente al inicio de la segunda copia */
+    100% { transform: translateX(-50%); }
 }
 
 .slide-item {
-    padding: 0 40px; /* This makes 80px total gap between items */
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;

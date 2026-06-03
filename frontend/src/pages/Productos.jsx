@@ -19,24 +19,10 @@ const Productos = () => {
                 titulo2='Nuestros Productos'
             />
             <ProductLoop />
-
             <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
-
             <div className="full-container bg-blue" style={{ height: "30px" }}></div>
 
-            <div className="full-container"
-                style={{
-                    padding: "50px 0"
-                }}>
-                <div className="container">
-                    <h3 className="service-section-title" style={{ marginTop: "50px", marginBottom: "30px" }}>Características</h3>
-                    <ProductFeatures key={product.id} features={product.features} />
-                </div>
-            </div>
-
-            <div className="full-container bg-blue" style={{ height: "30px" }}></div>
-            <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
-
+            {/* Cerramientos */}
             <div className="full-container">
                 <div className="container cerramientos-header">
                     <h3 className="service-section-title" style={{ marginBottom: "0" }}>Cerramientos</h3>
@@ -68,9 +54,7 @@ const Productos = () => {
                 </div>
             </div>
 
-            <div className="full-container bg-blue" style={{ height: "30px" }}></div>
-            <div className="full-container" style={{ backgroundImage: `url(${base}assets/img/products/adicionales/adicionales-banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat", height: "400px" }}></div>
-
+            {/* Adicionales */}
             <div className="full-container" style={{ paddingBottom: "100px" }}>
                 <div className="container cerramientos-header">
                     <h3 className="service-section-title" style={{ marginBottom: "0" }}>Adicionales</h3>
@@ -95,6 +79,21 @@ const Productos = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
+
+            <div className="full-container bg-blue" style={{ height: "30px" }}></div>
+
+            <div className="full-container"
+                style={{
+                    padding: "50px 0"
+                }}>
+                <div className="container">
+                    <h3 className="service-section-title" style={{ marginTop: "50px", marginBottom: "30px" }}>Características</h3>
+                    <ProductFeatures key={product.id} features={product.features} />
+                </div>
+            </div>
+
         </>
 
     );

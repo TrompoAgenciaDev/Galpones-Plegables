@@ -89,6 +89,7 @@ const Footer = () => {
                         <div className="footer-contact-group">
                             <div className="footer-social">
                                 <a href="#" className="upper-text text-white">FACEBOOK</a>
+                                <br/>
                                 <a href="#" className="upper-text text-white">INSTAGRAM</a>
                             </div>
                         </div>
@@ -98,7 +99,7 @@ const Footer = () => {
             <div className="full-container copy-container bg-dark-blue">
                 <div className="full-container">
                     <p className='upper-text text-white'>
-                        © 2026 - diseñado x <a href="http://trompoagencia.com" target="_blank" rel="noopener noreferrer"><strong>trompo agencia</strong></a> Todos los derechos reservados
+                        © 2026 - diseñado x <a href="https://trompoagencia.com" target="_blank" rel="noopener noreferrer"><strong>trompo agencia</strong></a> Todos los derechos reservados
                     </p>
                 </div>
                 <motion.div
