@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Hero from "../layouts/Hero";
 import "../styles/montaje.css";
 
@@ -74,19 +75,36 @@ const Montaje = () => {
                 <div className="container">
                     <div className="montaje-steps">
                         {steps.map((step) => (
-                            <div className="montaje-step" key={step.number}>
-                                <div className="montaje-step__content">
+                            <motion.div
+                                className="montaje-step"
+                                key={step.number}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.6, ease: [0.215, 0.61, 0.355, 1] }}
+                            >
+                                <motion.div
+                                    className="montaje-step__content"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: 0.15, ease: [0.215, 0.61, 0.355, 1] }}
+                                >
                                     <span className="montaje-step__number">{step.number}</span>
                                     <h3>{step.title}</h3>
                                     <p>{step.desc}</p>
                                     <p className="upper-text"><strong>{step.highlight}</strong></p>
-                                </div>
-                                <img
+                                </motion.div>
+                                <motion.img
                                     className="montaje-step__image"
                                     src={`${base}${step.img}`}
                                     alt={step.alt}
+                                    initial={{ opacity: 0, x: 20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: 0.2, ease: [0.215, 0.61, 0.355, 1] }}
                                 />
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

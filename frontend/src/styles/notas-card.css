@@ -59,8 +59,14 @@
     transform: scale(1.08);
 }
 
+.nota-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .nota-name {
-    padding: 24px 24px 0;
+    padding: 0 24px;
     color: var(--terciary-color);
     font-weight: 500;
 }
@@ -93,7 +99,7 @@
 
 .nota-image-container {
     position: relative;
-    width: 100%;
+    margin: 0 24px;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
@@ -102,10 +108,8 @@
 .nota-image-hover {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    padding: 0 20px;
-    box-sizing: border-box;
-    transition: opacity 0.3s ease-in-out;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .nota-image-hover {
@@ -123,20 +127,15 @@
     opacity: 1;
 }
 
-/* Gallery fade-in on image change */
-@keyframes nota-fade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.nota-gallery-overlay {
+/* Gallery slides — mismas dimensiones que nota-image-main */
+.nota-gallery-slide {
     position: absolute;
-    top: 2.5%;
-    left: 2.5%;
-    width: 95%;
-    height: 95%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    animation: nota-fade 0.3s ease;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Arrow buttons */
@@ -147,28 +146,28 @@
     z-index: 10;
     width: 36px;
     height: 36px;
-    background: rgba(0, 0, 0, 0.35);
+    background: transparent;
     border: none;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: opacity 0.2s ease;
     padding: 0;
 }
 
 .nota-gallery-btn:hover {
-    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
 }
 
 .nota-gallery-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
 }
 
-.nota-gallery-prev { left: 0; }
-.nota-gallery-next { right: 0; }
+.nota-gallery-prev { left: 12px; }
+.nota-gallery-next { right: 12px; }
 
 /* Dots */
 .nota-gallery-dots {

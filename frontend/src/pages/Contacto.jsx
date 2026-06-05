@@ -48,7 +48,6 @@ const Contacto = () => {
             <Hero
                 titulo1="Contactate"
                 titulo2="con nosotros"
-                location=""
             />
 
             <div className="full-container contact-v3">

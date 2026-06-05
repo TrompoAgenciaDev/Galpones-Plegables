@@ -84,17 +84,17 @@ const NotasCard = ({ nota }) => {
                             loading="lazy"
                         />
                         {isHovered && hasGallery && (
-                            <img
-                                key={index}
-                                src={`${base}${gallery[index].replace(/^\//, '')}`}
-                                alt={nota.name}
-                                className="nota-gallery-overlay"
-                                loading="eager"
-                            />
-                        )}
-
-                        {isHovered && hasGallery && (
                             <>
+                                {gallery.map((img, i) => (
+                                    <img
+                                        key={i}
+                                        src={`${base}${img.replace(/^\//, '')}`}
+                                        alt={nota.name}
+                                        className="nota-gallery-slide"
+                                        style={{ opacity: i === index ? 1 : 0 }}
+                                        loading={i === 0 ? 'eager' : 'lazy'}
+                                    />
+                                ))}
                                 <button className="nota-gallery-btn nota-gallery-prev" onClick={handlePrev} aria-label="Anterior">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M15 18l-6-6 6-6" />
