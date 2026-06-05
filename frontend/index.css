@@ -57,7 +57,7 @@ body {
     transform: translateY(-200%);
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
-    z-index: 1000001;
+    z-index: 1000003;
 }
 
 .skip-link:focus,
@@ -344,7 +344,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999999;
+    z-index: 1000002;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,7 +385,7 @@ header {
     width: 100%;
     height: 100vh;
     background-color: var(--primary-color);
-    z-index: 999998;
+    z-index: 1000000;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

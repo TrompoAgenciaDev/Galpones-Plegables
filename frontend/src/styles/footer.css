@@ -60,7 +60,7 @@ h4.mobile {
     justify-content: flex-start;
 }
 
-.copy-container {
+.full-container.copy-container {
     display: flex;
     flex-direction: column-reverse;
     padding: 20px 0 10px;

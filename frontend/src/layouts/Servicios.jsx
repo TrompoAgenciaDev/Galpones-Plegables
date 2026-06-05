@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "../styles/servicios.css";
 
@@ -26,6 +26,13 @@ const textMotion = {
 
 const Servicios = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
+
+    useEffect(() => {
+        const handler = () => setIsMobile(window.innerWidth < 1024);
+        window.addEventListener("resize", handler);
+        return () => window.removeEventListener("resize", handler);
+    }, []);
 
     const handleToggle = useCallback((index) => {
         setActiveIndex((prev) => (prev === index ? null : index));
@@ -92,8 +99,8 @@ const Servicios = () => {
                                             className="accordion-image-wrapper"
                                             initial={false}
                                             animate={{
-                                                width: isOpen ? "50%" : "120px",
-                                                height: isOpen ? "300px" : "50px"
+                                                width: isMobile ? "100%" : (isOpen ? "50%" : "120px"),
+                                                height: isOpen ? (isMobile ? "200px" : "300px") : (isMobile ? "0px" : "50px"),
                                             }}
                                             transition={{ duration: 0.5, ease: [0.215, 0.61, 0.355, 1] }}
                                         >
@@ -107,9 +114,16 @@ const Servicios = () => {
                                         <motion.div
                                             className={`accordion-text-wrapper ${isOpen ? 'is-open' : ''}`}
                                             initial={false}
-                                            animate={{
+                                            animate={isMobile ? {
+                                                borderTopColor: isOpen ? "var(--terciary-color)" : "transparent",
+                                                paddingTop: isOpen ? "16px" : "0px",
+                                                borderLeftColor: "transparent",
+                                                paddingLeft: "0px",
+                                            } : {
                                                 borderLeftColor: isOpen ? "var(--terciary-color)" : "transparent",
                                                 paddingLeft: isOpen ? "50px" : "0px",
+                                                borderTopColor: "transparent",
+                                                paddingTop: "0px",
                                             }}
                                             transition={{ duration: 0.5, ease: "easeOut" }}
                                         >
@@ -122,7 +136,7 @@ const Servicios = () => {
                                                 <motion.h4
                                                     className="accordion-title"
                                                     initial={false}
-                                                    animate={{ fontSize: isOpen ? "40px" : "28px", fontWeight: isOpen ? 700 : 500 }}
+                                                    animate={{ fontSize: isOpen ? (isMobile ? "22px" : "40px") : (isMobile ? "18px" : "28px"), fontWeight: isOpen ? 700 : 500 }}
                                                     transition={{ duration: 0.3 }}
                                                 >
                                                     {item.title}

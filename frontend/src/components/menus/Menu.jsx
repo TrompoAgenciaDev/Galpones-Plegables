@@ -3,6 +3,8 @@ import { animate } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import routesConfig from "@/config/routesConfig";
 
+const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
 const ScrambleText = ({ text }) => {
   const [displayText, setDisplayText] = useState(text);
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -28,7 +30,7 @@ const ScrambleText = ({ text }) => {
   };
 
   return (
-    <span onMouseEnter={scramble} className="white-color">
+    <span onMouseEnter={canHover ? scramble : undefined} className="white-color">
       {displayText}
     </span>
   );

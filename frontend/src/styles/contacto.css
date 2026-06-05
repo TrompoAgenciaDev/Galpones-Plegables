@@ -21,15 +21,6 @@
     gap: 16px;
 }
 
-.contact-v3-label {
-    font-family: var(--text-font);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    color: var(--terciary-color);
-    margin: 0;
-}
 
 .contact-v3-title {
     font-family: var(--primary-font);

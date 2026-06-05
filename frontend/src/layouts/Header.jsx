@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 import Menu from "../components/menus/Menu";
 import '../styles/header.css';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = () => setIsOpen((prev) => !prev);
     const closeMenu = () => setIsOpen(false);
+
+    // Cierra el menú en cada cambio de ruta
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location.pathname]);
+
+    // Bloquea el scroll del body mientras el menú está abierto
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? "hidden" : "";
+        return () => { document.body.style.overflow = ""; };
+    }, [isOpen]);
 
     const base = import.meta.env.BASE_URL;
 
@@ -16,9 +29,9 @@ const Header = () => {
             <header className="full-container">
                 <div className="container header-content">
                     <div className="header-logo">
-                        <a href={base}>
+                        <Link to="/">
                             <img src={`${base}logo.svg`} alt="Logo" />
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="header-menu">

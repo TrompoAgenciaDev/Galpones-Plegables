@@ -1,5 +1,7 @@
+/* ── mobile base ─────────────────────────────────────── */
+
 .about-features-slider .about-section-title {
-    font-size: 56px;
+    font-size: 28px;
     margin: 0;
     color: var(--primary-color);
     font-weight: 500;
@@ -14,6 +16,7 @@
     gap: 24px;
     width: 100%;
     max-width: 1100px;
+    padding: 0 20px;
 }
 
 .about-features-row > .about-features-text-wrapper:first-child {
@@ -21,21 +24,13 @@
     flex-shrink: 0;
 }
 
-@media (min-width: 1024px) {
-    .about-features-row {
-        flex-direction: row;
-        align-items: center;
-        gap: 70px;
-    }
-}
-
 .about-features-slider .about-features-text-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 22px;
-    height: 300px;
-    max-height: 300px;
+    height: auto;
+    min-height: 140px;
     background-color: var(--text-primary-color);
 }
 
@@ -48,10 +43,11 @@
     color: var(--primary-color);
 }
 
+/* Mobile: 1 columna */
 .slider-featured.about-features-slider .pointer-container {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    border-top: 1px solid var(--primary-color)
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--primary-color);
 }
 
 .about-features-slider .upper-text {
@@ -63,13 +59,32 @@
     margin: 0;
 }
 
+
+/* ── desktop restore ─────────────────────────────────── */
+
 @media (min-width: 1024px) {
+
+    .about-features-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .about-features-slider .about-section-title {
+        font-size: 56px;
+    }
+
+    /* Desktop: 5 columnas, sobreescribe el grid genérico de 4 del slider-featured */
     .slider-featured.about-features-slider .pointer-container {
+        display: grid !important;
         grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
     }
 
     .about-features-slider .about-features-text-container {
         padding: 50px;
+        height: 300px;
+        max-height: 300px;
+        align-items: center;
     }
 
     .about-features-slider .upper-text {

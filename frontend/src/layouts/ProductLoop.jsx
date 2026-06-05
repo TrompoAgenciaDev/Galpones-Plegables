@@ -86,9 +86,9 @@ const ProductLoop = () => {
                                 {productsData.map((p, pi) => (
                                     <div className="comparar-render-item" key={p.id}>
                                         <img src={`${base}${p.comparar_img}`} alt={p.name} />
-                                        <span className="comparar-product-name" style={{ color: pi === 0 ? "var(--primary-color)" : "var(--terciary-color)" }}>
+                                        <h5 className="comparar-product-name" style={{ color: pi === 0 ? "var(--primary-color)" : "var(--terciary-color)" }}>
                                             {p.name}
-                                        </span>
+                                        </h5>
                                     </div>
                                 ))}
                             </div>

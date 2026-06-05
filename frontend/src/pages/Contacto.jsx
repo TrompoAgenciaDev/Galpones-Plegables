@@ -48,13 +48,12 @@ const Contacto = () => {
             <Hero
                 titulo1="Contactate"
                 titulo2="con nosotros"
-                location="contacto"
+                location=""
             />
 
             <div className="full-container contact-v3">
                 <div className="container contact-v3-inner">
-                    <p className="contact-v3-label">Canales oficiales</p>
-                    <h2 className="contact-v3-title">
+<h2 className="contact-v3-title">
                         Seguinos y comunicate con nosotros
                     </h2>
                     <div className="contact-v3-icons">
