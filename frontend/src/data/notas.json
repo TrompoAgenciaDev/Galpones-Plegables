@@ -7,30 +7,25 @@
     "hover_image": "assets/img/products/plegable-7-3/plegable-7-3.png",
     "logo_img": "assets/img/notas/valle.png",
     "gallery": [
-      "assets/img/proyectos/7-3/valle-montaje (1).webp",
-      "assets/img/proyectos/7-3/valle-montaje (2).webp",
-      "assets/img/proyectos/7-3/valle-montaje (3).webp",
-      "assets/img/proyectos/7-3/valle-montaje (4).webp",
-      "assets/img/proyectos/7-3/valle-montaje (5).webp",
-      "assets/img/proyectos/7-3/valle-montaje.webp"
+      "assets/img/proyectos/7-3/valle/valle-montaje (1).webp",
+      "assets/img/proyectos/7-3/valle/valle-montaje (2).webp",
+      "assets/img/proyectos/7-3/valle/valle-montaje (3).webp",
+      "assets/img/proyectos/7-3/valle/valle-montaje (4).webp",
+      "assets/img/proyectos/7-3/valle/valle-montaje (5).webp",
+      "assets/img/proyectos/7-3/valle/valle-montaje.webp"
     ]
   },
   {
     "id": 2,
     "name": "Coca-cola",
     "galpon": "Galpón Plegable 11.4",
-    "default_image": "assets/img/products/plegable-11-4/plegable 11-4 azlu.png",
-    "hover_image": "assets/img/products/plegable-11-4/plegable 11-4.png",
+    "default_image": "assets/img/proyectos/11-4/coca-cola/coca-cola-11-4-azul.webp",
+    "hover_image": "assets/img/proyectos/11-4/coca-cola/coca-cola-11-4.webp",
     "logo_img": "assets/img/notas/coca.png",
     "gallery": [
-      "assets/img/proyectos/11-4/coca-114 (1).webp",
-      "assets/img/proyectos/11-4/coca-114 (2).webp",
-      "assets/img/proyectos/11-4/coca-114 (3).webp",
-      "assets/img/proyectos/11-4/coca-114 (4).webp",
-      "assets/img/proyectos/11-4/coca-114 (5).webp",
-      "assets/img/proyectos/11-4/coca-114 (6).webp",
-      "assets/img/proyectos/11-4/coca-114 (7).webp",
-      "assets/img/proyectos/11-4/coca-114 (8).webp"
+      "assets/img/proyectos/11-4/coca-cola/coca-cola-11-4-1.webp",
+      "assets/img/proyectos/11-4/coca-cola/coca-cola-11-4-2.webp",
+      "assets/img/proyectos/11-4/coca-cola/coca-cola-11-4-3.webp"
     ]
   }
 ]

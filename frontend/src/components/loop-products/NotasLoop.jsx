@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import notasData from '../../data/notas.json';
 import NotasCard from './NotasCard';
 import '../../styles/notas-card.css';
@@ -44,7 +44,8 @@ const NotasLoop = () => {
             <div className="carousel-container">
                 <motion.div
                     className="carousel-track"
-                    animate={{ x: `-${currentIndex * (100 / itemsToShow)}%` }}
+                    style={{ width: `${(notasData.length / itemsToShow) * 100}%` }}
+                    animate={{ x: `-${(currentIndex / notasData.length) * 100}%` }}
                     transition={{
                         type: "tween",
                         ease: "easeInOutQuart",
@@ -54,7 +55,7 @@ const NotasLoop = () => {
                     {notasData.map((nota) => (
                         <div
                             className="carousel-item"
-                            style={{ flex: `0 0 ${100 / itemsToShow}%` }}
+                            style={{ flex: `0 0 ${100 / notasData.length}%` }}
                             key={nota.id}
                         >
                             <NotasCard nota={nota} />

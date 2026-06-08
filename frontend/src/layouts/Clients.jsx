@@ -6,7 +6,8 @@ const Clients = () => {
     const clients = [
         "cocacola.png",
         "valle2.png",
-        "inomax.png"
+        "inomax.png",
+        "porta.png"
     ];
 
     return (

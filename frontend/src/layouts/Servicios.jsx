@@ -41,7 +41,7 @@ const Servicios = () => {
     return (
         <>
             <section className="full-container full-img-container">
-                <img className="about-render" src={`${import.meta.env.BASE_URL}assets/img/galpon.webp`} loading="lazy" alt="Galpones Plegables" />
+                <img className="about-render" src={`${import.meta.env.BASE_URL}assets/img/galpones.webp`} loading="lazy" alt="Galpones Plegables" />
             </section>
             <section className="full-container bg-white services-section">
                 <div className="container grid-services">

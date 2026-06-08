@@ -53,6 +53,8 @@ const Productos = () => {
                     </div>
                 </div>
             </div>
+            
+            <div className="full-container bg-blue" style={{ height: "30px" }}></div>
 
             {/* Adicionales */}
             <div className="full-container" style={{ paddingBottom: "100px" }}>
@@ -80,7 +82,7 @@ const Productos = () => {
                 </div>
             </div>
 
-            <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner.png)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
+            <div className="full-container productos-banner" style={{ backgroundImage: `url(${base}assets/img/products/productos_banner-2.webp)`, backgroundPosition: "center center", backgroundSize: "cover", backgroundRepeat: "no-repeat" }}></div>
 
             <div className="full-container bg-blue" style={{ height: "30px" }}></div>
 
