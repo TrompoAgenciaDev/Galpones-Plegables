@@ -17,6 +17,10 @@ export default defineConfig(({ command }) => ({
         target: 'http://localhost:8000',
         changeOrigin: true,
       },
+      '/form-handler.php': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+      },
     },
   },
 }))

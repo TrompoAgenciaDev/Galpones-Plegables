@@ -39,6 +39,25 @@ CREATE TABLE beneficios (
     INDEX idx_producto (producto_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- Tabla: consultas (formulario de contacto / solicitudes de presupuesto)
+CREATE TABLE consultas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    submission_id VARCHAR(64) UNIQUE COMMENT 'UUID generado por el frontend',
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    provincia VARCHAR(100),
+    empresa VARCHAR(500),
+    telefono VARCHAR(50),
+    email VARCHAR(255) NOT NULL,
+    consulta TEXT NOT NULL,
+    location VARCHAR(50) DEFAULT 'footer' COMMENT 'footer | home | etc.',
+    ip_address VARCHAR(45),
+    user_agent VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_email (email),
+    INDEX idx_created (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- Tabla: trabajos_hechos (Casos de Éxito)
 CREATE TABLE trabajos_hechos (
     id INT AUTO_INCREMENT PRIMARY KEY,
